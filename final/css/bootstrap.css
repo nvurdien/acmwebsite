@@ -7096,8 +7096,6 @@ td.visible-print {
     display: none !important;
   }
 }
-
-*{font-family:Signika !important;}
 header {
     background: #00274c;
     height: 80px;
@@ -7106,11 +7104,13 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 100;
+    font-family: Signika !important;
 }
 .nav-up {
     top: -80px;
 }
 body {
+  font-family: Signika;
     padding-top: 80px;
 }
 
@@ -7127,3 +7127,101 @@ body {
     position: relative;
     z-index: 1;
 	}
+
+.jumbotron {
+        background-color: inherit;
+        color: #fff;
+        padding: 100px 25px;
+        font-family: Open Sans !important;
+  }
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+        font-size: 19px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+#about{
+  padding: 60px 50px;
+  background-color: #0094ce;
+  color: #005daa;
+}
+
+#board{
+  padding: 60px 50px;
+background-color: #f6f6f6;
+}
+
+#events{
+  padding: 60px 50px;
+  background-color: #fff;
+}
+
+#contact{
+  padding: 60px 50px;
+background-color: #f6f6f6;
+}
+
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+.active {
+  color: #e17000;
+}
+.active:hover {
+  color: #e17000;
+}
