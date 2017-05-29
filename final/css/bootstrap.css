@@ -388,13 +388,7 @@ hr {
 }
 
 p {
-  margin: 0 auto;
-  max-width: 50em;
-  font-family: "Helvetica", "Arial", sans-serif;
-  line-height: 1.5;
-  padding: 4em 1em;
-  color: #555;
-
+  margin: 0 0 10px;
 }
 
 .lead {
@@ -561,8 +555,6 @@ h1,
 
 h2,
 .h2 {
-  margin-top: 1em;
-  padding-top: 1em;
   font-size: 30px;
 }
 
