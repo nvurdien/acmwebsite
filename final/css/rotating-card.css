@@ -84,11 +84,11 @@
 }
 .card-container, .front, .back {
 	width: 100%;
-	height: 420px;
+	height: 300px;
 	border-radius: 4px;
 }
 .card .cover{
-    height: 105px;
+    height: 70px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -115,10 +115,10 @@
     padding: 10px 20px 20px;
 }
 .card .content .main {
-    min-height: 160px;
+    min-height: 70px;
 }
 .card .back .content .main {
-    height: 215px;
+    height: 90px;
 }
 .card .name {
     font-size: 22px;

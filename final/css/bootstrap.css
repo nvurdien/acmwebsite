@@ -7161,9 +7161,13 @@ body {
   color: #005daa;
 }
 
-#board{
+#section{
   padding: 60px 50px;
 background-color: #f6f6f6;
+}
+
+#section p{
+  color: #303030;
 }
 
 #events{
@@ -7224,4 +7228,32 @@ background-color: #f6f6f6;
 li a:hover, li.active a {
       color: #e17000 !important;
       background-color: #fff !important;
+  }
+
+  #footerwrap {
+  	padding-top: 60px;
+  	padding-bottom: 60px;
+  	background: #00274c;
+  }
+
+  #footerwrap p {
+  	color: #bfc9d3;
+  }
+
+  #footerwrap h4 {
+  	color: white;
+  }
+
+  #footerwrap i {
+  	font-size: 30px;
+  	color: #bfc9d3;
+  	padding-right: 25px;
+  }
+
+  #footerwrap i:hover {
+  	color: #00b3fe
+  }
+  .hline-w {
+  	border-bottom: 2px solid #ffffff;
+  	margin-bottom: 25px;
   }
