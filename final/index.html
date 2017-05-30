@@ -24,10 +24,11 @@
 
 </head>
 <title>CSUF ACM Homepage</title>
-<body id="home" data-spy="scroll" data-target="#navbar" data-offset="60">
-<header class="nav-down">
+<body>
+
+<header class="nav-down" id="navbar">
   <div class="container">
-  <a class="navbar-brand" href="#home" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px></a>
+    <a class="navbar-brand" href="#" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px></a>
   <div class="navbar-header" style="padding-top:20px;">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#00274c; border-color:#005daa;">
     <span class="sr-only">Toggle navigation</span>
@@ -36,19 +37,18 @@
     <span class="icon-bar" style="background-color:#005daa"></span>
   </button>
 </div>
-  <div class="navbar-collapse collapse navbar-right" style="background-color:#00274c; padding-top:20px;">
-    <ul class="nav navbar-nav" id="navbar">
-      <li class="active"><a href="#about">About Us</a></li>
-      <li><a href="#board">The Board</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+  <div  class="navbar-collapse collapse navbar-right" style="background-color:#00274c; padding-top:20px;">
+    <ul class="nav navbar-nav">
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="board.html">The Board</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 </header>
-<body>
   <div class="bgimg">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center"><BR><BR><BR><BR>
       <h1>Association of Computing Machinery</h1>
       <hr style="width:50%">
       CSUF ACM
@@ -64,10 +64,9 @@
 
   <div id="board" class="container-fluid text-center">
         <h2>Meet the Board</h2>
-        <h4>Motto?</h4>
-        <div class="row slideanim">
+        <div class="row">
 
-        <div class="col-md-3 col-sm-3">
+        <div class="col-md-3 col-sm-3 slideanim">
         <div class="card-container">
            <div class="card">
                <div class="front"><!--
@@ -117,7 +116,7 @@
      </div><!--end div-->
 
 
-     <div class="col-md-3 col-sm-3">
+     <div class="col-md-3 col-sm-3 slideanim">
      <div class="card-container">
         <div class="card">
             <div class="front"><!--
@@ -166,7 +165,7 @@
      </div> <!-- end card-container -->
      </div><!--end div-->
 
-     <div class="col-md-3 col-sm-3">
+     <div class="col-md-3 col-sm-3 slideanim">
      <div class="card-container">
         <div class="card">
             <div class="front"><!--
@@ -215,7 +214,7 @@
     </div> <!-- end card-container -->
   </div><!--end div-->
 
-  <div class="col-md-3 col-sm-3">
+  <div class="col-md-3 col-sm-3 slideanim">
   <div class="card-container">
      <div class="card">
          <div class="front"><!--
@@ -264,7 +263,7 @@
  </div> <!-- end card-container -->
 </div><!--end div-->
 
-<div class="col-md-3 col-sm-3">
+<div class="col-md-3 col-sm-3 slideanim">
 <div class="card-container">
    <div class="card">
        <div class="front"><!--
@@ -313,7 +312,7 @@
 </div> <!-- end card-container -->
 </div><!--end div-->
 
-<div class="col-md-3 col-sm-3">
+<div class="col-md-3 col-sm-3 slideanim">
 <div class="card-container">
    <div class="card">
        <div class="front"><!--
@@ -362,7 +361,7 @@
 </div> <!-- end card-container -->
 </div><!--end div-->
 
-<div class="col-md-3 col-sm-3">
+<div class="col-md-3 col-sm-3 slideanim">
 <div class="card-container">
    <div class="card">
        <div class="front"><!--
@@ -421,6 +420,8 @@
 <div id="contact" class="container-fluid">
 <h2>Contact Us</h2>
 </div>
+<div class="footer">Hey
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -476,16 +477,14 @@ if($(document).height() ==0){
 
 .bgimg{
   /* Full height */
-    height: 70%;
-
+    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   background-image: url("https://farm5.staticflickr.com/4059/4696338852_bde479b169_o.jpg");
-  min-height: 70%;
-  opacity: 0.8;
+  min-height: 100%;
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -544,7 +543,7 @@ right: 'month,listYear'
 });
 
 </script>
-
+<!--
 <script>
 
   $(document).scroll(function() {
@@ -558,27 +557,6 @@ right: 'month,listYear'
     });
 
     $(document).on("scroll", onScroll);
-
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
@@ -596,5 +574,41 @@ function onScroll(event){
 }
 });
 </script>
+-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".nav a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        document.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(document).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(document).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
 </html>

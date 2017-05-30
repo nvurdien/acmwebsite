@@ -5225,8 +5225,7 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
@@ -5250,7 +5249,6 @@ a.list-group-item.active > .badge,
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
-    padding-bottom: 48px;
   }
   .container .jumbotron {
     padding-right: 60px;
@@ -7111,7 +7109,6 @@ header {
 }
 body {
   font-family: Signika;
-    padding-top: 80px;
 }
 
 	#loading {
@@ -7131,7 +7128,6 @@ body {
 .jumbotron {
         background-color: inherit;
         color: #fff;
-        padding: 100px 25px;
         font-family: Open Sans !important;
   }
   body {
@@ -7154,6 +7150,12 @@ body {
         margin-bottom: 30px;
     }
 #about{
+  padding: 60px 50px;
+  background-color: #0094ce;
+  color: #005daa;
+}
+
+#header{
   padding: 60px 50px;
   background-color: #0094ce;
   color: #005daa;
@@ -7219,9 +7221,7 @@ background-color: #f6f6f6;
     }
   }
 
-.active {
-  color: #e17000;
-}
-.active:hover {
-  color: #e17000;
-}
+li a:hover, li.active a {
+      color: #e17000 !important;
+      background-color: #fff !important;
+  }
