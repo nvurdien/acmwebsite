@@ -104,6 +104,8 @@
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'acmcsufullerton@gmail.com';                 // SMTP username
+        /* passwd is from password.php, which is ignored by the git repository. you'll need to create a php file with a variable 
+            * named "passwd" to make this work */
         $mail->Password = $passwd;
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
