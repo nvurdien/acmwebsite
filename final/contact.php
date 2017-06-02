@@ -44,14 +44,95 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="board.html">The Board</a></li>
       <li><a href="events.html">Events</a></li>
-      <li class="active"><a href="contact.html">Contact Us</a></li>
+      <li class="active"><a href="contact.php">Contact Us</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 </header>
 
 
-<div id="header"><div class="jumbotron text-center"><h1 style="font-family:Open Sans">Contact Us</h1></div></div>
+<div id="header" style="border-bottom: dashed 1px black"><div class="jumbotron text-center"><h1 style="font-family:Open Sans">Contact Us</h1></div></div>
+
+
+
+<section id="contact" style="">
+            <div class="container">
+                <div class="row">
+                    <div class="about_our_company" style="margin-bottom: 20px;">
+                        <h1 style="color:#fff;">Get In Touch With ACM</h1>
+                        <p style="color:#fff;">Please send us any questions, comments or concerns.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name *" name="name" value="<?php echo $name;?>" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" name="email" value="<?php echo $email;?>" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" placeholder="Your Subject *" name="subject" value="<?php echo $subject;?>" required>
+                                      <p class="help-block text-danger"></p>
+                                  </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your Message *" name="message" value="<?php echo $message;?>" required></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <input type="submit" name="but" value="Submit" class="btn btn-xl get"/>
+                                </div>
+                            </div>
+                        </form>
+<?php
+	if (isset($_POST['but'])) {
+	require 'PHPMailer/PHPMailerAutoload.php';
+	$mail = new PHPMailer;
+
+	$mail->IsSMTP();
+	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = 'acmcsufullerton@gmail.com';                 // SMTP username
+	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+	$mail->Port = 587;                                    // TCP port to connect to
+
+	$mail->setFrom('acmcsufullerton@gmail.com', 'Website Form Submission');
+	$mail->addAddress('acmcsufullerton@gmail.com', 'Website Form Submission');     // Add a recipient
+
+	$mail->Subject = $_POST['subject'];
+	$mail->Body    = "Message from " .$_POST['name']. "\nReply to this email: ". $_POST['email'] . "\n\n" .$_POST['message'];
+
+	if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+	} else {
+		echo '<div class="about_our_company" style="margin-bottom: 20px; text-align: left;"><h1 style="color:#fff;">Message has been sent</h1></div>';
+}
+
+}
+?>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="color:#fff;">
+                            <strong><i class="fa fa-envelope" style="color:white"></i>  Email Address</strong><br>
+                            <a href="mailto:acmcsufullerton@gmail.com" style="color:white; text-decoration:none;">acmcsufullerton@gmail.com</a></p>
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+</div>
 
 <div id="footerwrap">
   <div class="container">
