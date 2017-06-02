@@ -97,12 +97,14 @@
 <?php
 	if (isset($_POST['but'])) {
 	require 'PHPMailer/PHPMailerAutoload.php';
+        include 'password.php';
 	$mail = new PHPMailer;
 
 	$mail->IsSMTP();
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'acmcsufullerton@gmail.com';                 // SMTP username
+        $mail->Password = $passwd;
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 
