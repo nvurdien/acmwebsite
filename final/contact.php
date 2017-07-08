@@ -40,7 +40,7 @@
 <header class="nav-down" id="navbar">
   <div class="container">
     <!--BRAND-->
-  <a class="navbar-brand" href="index.html" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px></a>
+  <a class="navbar-brand" href="index.html" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px alt="ACM Logo"></a>
   <!--For phones or smaller screens will have a drop down menu of each link for the site-->
   <div class="navbar-header" style="padding-top:20px;">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#00274c; border-color:#005daa;">
@@ -57,17 +57,22 @@
       <li><a href="board.html">The Board</a></li>
       <li><a href="events.html">Events</a></li>
       <li class="active"><a href="contact.php">Contact Us</a></li>
+      <li><a href="http://eepurl.com/cAndir" target="_blank"> Subscribe!</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 </header>
 <!--End of Navigation Bar-->
 
-<!--HEADER-->
-<div id="header" style="border-bottom: dashed 1px black"><div class="jumbotron text-center">
+<!--Parallax div-->
+<div class="bgimg" style="top:-40px">
+  <!--overlay so you can read the text-->
+  <div class="overlay">
+    <div class="jumbotron text-center" style="background:none"><BR><BR>
   <h1 style="font-family:Open Sans">Contact Us</h1>
-</div></div>
-
+</div>
+</div>
+</div>
 <!--Section holds the contact thing-->
 <section id="contact" style="">
             <div class="container">
@@ -194,47 +199,22 @@
 
 <!--allows header to go up with scroll and go down on up scroll-->
 <script type="text/javascript">
-var didScroll;
-var lastScrollTop = 0;
-var delta = 1;
-var navbarHeight = $('header').outerHeight();
+var previousScroll = 0,
+    headerOrgOffset = $('header').outerHeight();
 
-$(document).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(document).height() > $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+$(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > headerOrgOffset) {
+        if (currentScroll > previousScroll) {
+            $('header').addClass('nav-up').removeClass('nav-down');
+        } else {
+            $('header').addClass('nav-down').removeClass('nav-up');
         }
+    } else {
+            $('header').addClass('nav-down').removeClass('nav-up');
     }
-
-    lastScrollTop = st;
-}
-
-if($(document).height() ==0){
-  $('header').removeClass('nav-up').addClass('nav-down');
-}
+    previousScroll = currentScroll;
+});
 </script>
 
 <!--Parallax scrolling-->
@@ -242,15 +222,21 @@ if($(document).height() ==0){
 
 .bgimg{
   /* Full height */
-    height: 100%;
+    height: 50%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-  background-image: url("https://farm5.staticflickr.com/4059/4696338852_bde479b169_o.jpg");
+  background-image: url("img/IMG_0770.JPG");
+  min-height: 50%;
+}
+.overlay{
+  height:100%;
+  background: rgba(0, 93, 170, 0.7);
   min-height: 100%;
 }
+
 
 @media only screen and (max-device-width: 1024px) {
     .bgimg {

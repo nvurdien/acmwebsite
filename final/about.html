@@ -38,7 +38,7 @@
 <header class="nav-down" id="navbar">
   <div class="container">
     <!--BRAND-->
-  <a class="navbar-brand" href="index.html" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px></a>
+  <a class="navbar-brand" href="index.html" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px alt="ACM Logo"></a>
   <!--For phones or smaller screens will have a drop down menu of each link for the site-->
   <div class="navbar-header" style="padding-top:20px;">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#00274c; border-color:#005daa;">
@@ -55,6 +55,7 @@
       <li><a href="board.html">The Board</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="http://eepurl.com/cAndir" target="_blank"> Subscribe!</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
@@ -69,14 +70,14 @@
 </div>
 
 <!--First Section-->
-<div id="section" class="col-sm-12">
+<div class="section" class="col-sm-12">
   <h2>Who We Are</h2>
   <h4>ACM (founded 1947) is an international scientific and educational organization dedicated to advancing the art, science, engineering, and application of information technology, serving both professional and public interests by fostering the open interchange of information and by promoting the highest professional and ethical standards.
 <BR>The CSUF Student Chapter of the ACM, provides a continuing forum for the exchange of ideas and announcements for all the students on campus that share an interest in the diversified aspects of computing.</h4>
   </div>
 
 <!--Second Section-->
-<div id="section" class="col-sm-12" style="background-color:#0094ce">
+<div class="section" class="col-sm-12" style="background-color:#0094ce">
 <h2>What we Offer</h2>
 <h4>The CSUF Student Chapter of the ACM is an open organization to any student with interest in computers and/or computing. The ACM holds monthly general meetings throughout the semester. These meetings provide an excellent environment for students in which to exchange views, opinions, meet new friends and trade secret techniques. In addition to regular meetings, CSUF's Student Chapter of the ACM hosts selected speaker forums, monthly contests, software and hardware workshops, arranges company tours and plans social activities throughout the semester. Everyone is welcome, and encouraged to attend the meetings!</h4>
 
@@ -84,9 +85,8 @@
   <div class="col-lg-3 slideanim"><center><i class="fa fa-gift fa-3x" style="color:#303030"></i><h2>Projects</h2></div>
     <div class="col-lg-3 slideanim"><center><i class="fa fa-home fa-3x"  style="color:#303030"></i><h2>Workshops</div>
       <div class="col-lg-3 slideanim"><center><i class="fa fa-trophy fa-3x"  style="color:#303030"></i><h2>ICPC Practice</div>
-        <div class="col-lg-3 slideanim"><center><i class="fa fa-pencil fa-3x"  style="color:#303030"></i><h2>Resume Builder</div>
+        <div class="col-lg-3 slideanim"><center><i class="fa fa-code fa-3x"  style="color:#303030"></i><h2>Hackathons</div>
 
-<!--Must have a line below it so it does not merge with footer-->
 <h4>Let us know if you have an idea for a project or workshop, so we can start planning right away!</h4>
 </div>
 
@@ -131,47 +131,22 @@
 
 <!--allows header to go up with scroll and go down on up scroll-->
 <script type="text/javascript">
-var didScroll;
-var lastScrollTop = 0;
-var delta = 1;
-var navbarHeight = $('header').outerHeight();
+var previousScroll = 0,
+    headerOrgOffset = $('header').outerHeight();
 
-$(document).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(document).height() > $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
+$(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > headerOrgOffset) {
+        if (currentScroll > previousScroll) {
+            $('header').addClass('nav-up').removeClass('nav-down');
+        } else {
+            $('header').addClass('nav-down').removeClass('nav-up');
         }
+    } else {
+            $('header').addClass('nav-down').removeClass('nav-up');
     }
-
-    lastScrollTop = st;
-}
-
-if($(document).height() ==0){
-  $('header').removeClass('nav-up').addClass('nav-down');
-}
+    previousScroll = currentScroll;
+});
 </script>
 
 <!--Parallax scrolling-->

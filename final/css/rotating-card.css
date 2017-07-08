@@ -6,10 +6,10 @@
 }
 /* entire container, keeps perspective */
 .card-container {
-	  -webkit-perspective: 800px;
-   -moz-perspective: 800px;
-     -o-perspective: 800px;
-        perspective: 800px;
+	  -webkit-perspective: 900px;
+   -moz-perspective: 900px;
+     -o-perspective: 900px;
+        perspective: 900px;
         margin-bottom: 30px;
 }
 /* flip the pane when hovered */
@@ -84,11 +84,11 @@
 }
 .card-container, .front, .back {
 	width: 100%;
-	height: 300px;
+	height: 325px;
 	border-radius: 4px;
 }
 .card .cover{
-    height: 70px;
+    height: 90px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -98,10 +98,10 @@
 .card .user{
     border-radius: 50%;
     display: block;
-    height: 120px;
+    height: 100px;
     margin: -55px auto 0;
     overflow: hidden;
-    width: 120px;
+    width: 100px;
 }
 .card .user img{
     background: none repeat scroll 0 0 #FFFFFF;
@@ -115,10 +115,10 @@
     padding: 10px 20px 20px;
 }
 .card .content .main {
-    min-height: 70px;
+    min-height: 120px;
 }
 .card .back .content .main {
-    height: 90px;
+    height: 120px;
 }
 .card .name {
     font-size: 22px;
@@ -158,7 +158,7 @@
     height: 90px;
 }
 .card .motto{
-    border-bottom: 1px solid #EEEEEE;
+
     color: #999999;
     font-size: 14px;
     font-weight: 400;

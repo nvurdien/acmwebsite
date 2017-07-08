@@ -366,7 +366,7 @@ img {
 }
 
 .img-circle {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 hr {
@@ -7096,17 +7096,24 @@ td.visible-print {
 }
 header {
     background: #00274c;
-    height: 80px;
+    padding: 0;
+    margin: 0;
+    height: auto;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 100;
     font-family: Signika !important;
+    box-shadow: 0 2px 3px black;
 }
 .nav-up {
-    top: -80px;
+    top: -90px;
 }
+
+.nav-down {
+}
+
 body {
   font-family: Signika;
 }
@@ -7120,9 +7127,13 @@ body {
 
 	#calendar {
 		max-width: 900px;
+    padding: 1%;
 		margin: 0 auto;
     position: relative;
     z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px #C3C3C3;
 	}
 
 .jumbotron {
@@ -7159,14 +7170,17 @@ body {
   padding: 60px 50px;
   background-color: #0094ce;
   color: #005daa;
+  padding-top: 10%;
 }
 
-#section{
+.section{
   padding: 60px 50px;
 background-color: #f6f6f6;
+display: inline-block;
+width: 100%;
 }
 
-#section p{
+.section p{
   color: #303030;
 }
 
@@ -7285,8 +7299,9 @@ section#contact .form-group textarea.form-control {
     height: 236px;
 }
 section#contact .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none;
+    border-color: black;
+    border-style: dashed;
+      box-shadow: 0 3px 4px #C3C3C3;
 }
 .gellary_bg_none img{
 	width: 100%;
@@ -7324,4 +7339,24 @@ section#contact .text-danger {
     width: 40px;
     height: 20px;
     background: #ffffff;
+}
+
+input[type=submit]{
+  color: white;
+  background-color:#00274c;
+  -webkit-transition: all .5s ease-out !important;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .55s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+input[type=submit]:hover{
+  color:#00274c;
+  background-color:#ffffff;
+  -webkit-transition: all .5s ease-out !important;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .55s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
