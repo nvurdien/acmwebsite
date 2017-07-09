@@ -68,7 +68,7 @@
 <div class="bgimg" style="top:-40px">
   <!--overlay so you can read the text-->
   <div class="overlay">
-    <div class="jumbotron text-center" style="background:none"><BR><BR>
+    <div class="jumbotron text-center" style="background:none; padding-top:40px;"><BR><BR>
   <h1 style="font-family:Open Sans">Contact Us</h1>
 </div>
 </div>
@@ -235,6 +235,11 @@ $(window).scroll(function () {
   height:100%;
   background: rgba(0, 93, 170, 0.7);
   min-height: 100%;
+  -webkit-box-shadow: inset 0px -5px 5px 0px black;
+  -moz-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.45);
+z-index: 88;
+position: relative;
 }
 
 

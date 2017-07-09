@@ -4080,7 +4080,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 
 .nav > li.disabled > a {
@@ -7171,6 +7170,11 @@ body {
   background-color: #0094ce;
   color: #005daa;
   padding-top: 10%;
+  -moz-box-shadow:0 0 8px 0 black;
+  -webkit-box-shadow:0 0 8px 0 black;
+  box-shadow:0 0 8px 0 black;
+  z-index: 66;
+  position: relative;
 }
 
 .section{
@@ -7241,13 +7245,18 @@ background-color: #f6f6f6;
 
 li a:hover, li.active a {
       color: #e17000 !important;
-      background-color: #fff !important;
+      background-color: transparent !important;
   }
 
   #footerwrap {
   	padding-top: 60px;
   	padding-bottom: 60px;
   	background: #00274c;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+    z-index: 100;
+    position: relative;
   }
 
   #footerwrap p {
@@ -7268,14 +7277,8 @@ li a:hover, li.active a {
   	color: #00b3fe
   }
 
-  .hline-w {
-  	border-bottom: 2px solid #ffffff;
-  	margin-bottom: 25px;
-  }
-
   section#contact {
     background-color: #0094ce;
-    /*background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');*/
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -7360,3 +7363,22 @@ input[type=submit]:hover{
     -ms-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
+.top {
+				box-shadow: 0 -5px 5px -5px black;
+			}
+
+			.right {
+				box-shadow: 5px 0 5px -5px black;
+			}
+
+			.bottom {
+				box-shadow: 0 5px 5px -5px black;
+			}
+
+			.left {
+				box-shadow: -5px 0 5px -5px black;
+			}
+
+			.all {
+				box-shadow: 0 0 5px black;
+			}

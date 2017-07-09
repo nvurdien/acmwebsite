@@ -13,9 +13,6 @@
 
 <!--adds bootstrap css-->
 <link href="css/bootstrap.css" rel="stylesheet" />
-<!--adds calendar css-->
-<link href='css/fullcalendar.css' rel='stylesheet' />
-<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
 
 <!--adds fonts-->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -35,10 +32,8 @@
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 </head>
-
 <!--Title of page-->
-<title>CSUF ACM::Events</title>
-
+<title>CSUF ACM::About</title>
 <!--NAVIGATION BAR START-->
 <header class="nav-down" id="navbar">
   <div class="container">
@@ -58,81 +53,85 @@
     <ul class="nav navbar-nav">
       <li><a href="about.html">About Us</a></li>
       <li><a href="board.html">The Board</a></li>
-      <li class="active"><a href="events.html">Events</a></li>
+      <li><a href="events.html">Events</a></li>
       <li><a href="contact.php">Contact Us</a></li>
       <li><a href="http://eepurl.com/cAndir" target="_blank"> Subscribe!</a></li>
-      </ul>
+    </ul>
   </div><!--/.nav-collapse -->
 </div>
 </header>
 <!--End of Navigation Bar-->
-<body style="background-color:#f6f6f6;">
-<!--Parallax div-->
-<div class="bgimg" style="top:-40px">
-  <!--overlay so you can read the text-->
-  <div class="overlay">
-    <div class="jumbotron text-center" style="background:none; padding-top:40px;"><BR><BR>
-  <h1 style="font-family:Open Sans">Events</h1>
-</div>
+
+<!--HEADER-->
+<div id="header"><div class="jumbotron text-center">
+  <h1 style="font-family:Open Sans">Gallery</h1>
+  <h3 style="font-family:Open Sans">View our pictures here!</h3>
 </div>
 </div>
 
-<!--Section holds the calendar thing-->
-<div class="container">
-  <div class="row">
-    <BR>
-<div id='calendar'>
-</div>
-<BR>
-</div>
+<!--Big picture-->
+<div class="section" class="col-sm-12">
+<img src="img/4696338852_bde479b169_o.jpg" style="width: 100%; height: auto;">
+  </div>
+
+<!--Select a pic!-->
+<div class="gal" class="col-sm-12" style="background-color:#0094ce; overflow-x: scroll; height: 40%;">
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/acm-desktopcta.png"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/acm-desktopcta.png"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/acm-desktopcta.png"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/acm-desktopcta.png"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/acm-desktopcta.png"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
+<div class="block"><img src="img/4696338852_bde479b169_o.jpg"></div>
 </div>
 
-  <!--Footer Start-->
-  <div id="footerwrap">
-    <div class="container">
-  <div class="row">
+<!--Footer Start-->
+<div id="footerwrap">
+  <div class="container">
+<div class="row">
+  <div class="col-lg-4">
+        <h4>ACM <span class="fa fa-star fa-fw fa-pulse"></span> CSUF</h4>
+        <p>
+        Association of Computing Machinery<BR>
+        California State University, Fullerton
+      </p>
+    </div>
     <div class="col-lg-4">
-          <h4>ACM <span class="fa fa-star fa-fw fa-pulse"></span> CSUF</h4>
+          <h4>Find us on Social Media!</h4>
           <p>
-          Association of Computing Machinery<BR>
-          California State University, Fullerton
-        </p>
+            <a href=#><span class="fa fa-twitter-square fa-2x"></span></a>
+            <a href=#><span class="fa fa-facebook-square fa-2x"></span></a>
+            <a href=#><span class="fa fa-instagram fa-2x"></span></a>
+          </p>
       </div>
       <div class="col-lg-4">
-            <h4>Find us on Social Media!</h4>
+            <h4>Meetings</h4>
             <p>
-              <a href=#><span class="fa fa-twitter-square fa-2x"></span></a>
-              <a href=#><span class="fa fa-facebook-square fa-2x"></span></a>
-              <a href=#><span class="fa fa-instagram fa-2x"></span></a>
+              ICPC Practice @ CS___<BR>
+                <i class="fa fa-hand-o-right fa-fw fa-inverse" style="font-size:1em; color:#fff"></i>Every other Friday
             </p>
         </div>
-        <div class="col-lg-4">
-              <h4>Meetings</h4>
-              <p>
-                ICPC Practice @ CS___<BR>
-                  <i class="fa fa-hand-o-right fa-fw fa-inverse" style="font-size:1em; color:#fff"></i>Every other Friday
-              </p>
-          </div>
-  </div>
-  </div>
-  </div>
-  <!--Footer End-->
-</body>
-  <!--jquery stuff-->
+</div>
+</div>
+</div>
+<!--Footer End-->
+
+<!--jquery stuff-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-<script src='js/jquery-ui.custom.min.js'></script>
 <!--bootstrap js-->
 <script src="js/bootstrap.js"></script>
-<!--Calendar js-->
 <script src='js/lib/moment.min.js'></script>
-<script src='js/fullcalendar.js'></script>
-<script src='js/gcal.min.js'></script>
 
 <!--allows header to go up with scroll and go down on up scroll-->
 <script type="text/javascript">
-
 var previousScroll = 0,
     headerOrgOffset = $('header').outerHeight();
 
@@ -156,26 +155,14 @@ $(window).scroll(function () {
 
 .bgimg{
   /* Full height */
-    height: 50%;
+    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-  background-image: url("img/IMG_0586.JPG");
-  min-height: 50%;
-}
-
-.overlay{
-  height:100%;
-  background: rgba(0, 93, 170, 0.7);
+  background-image: url("https://farm5.staticflickr.com/4059/4696338852_bde479b169_o.jpg");
   min-height: 100%;
-  -webkit-box-shadow: inset 0px -5px 5px 0px black;
-  -moz-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.45);
-  box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.45);
-z-index: 88;
-position: relative;
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -185,38 +172,6 @@ position: relative;
 }
 
 </style>
-
-<!--Calendar API key and other information for calendar-->
-<script>
-$(document).ready(function() {
-    $('#calendar').fullCalendar({
-
-      header: {
-        left: 'title',
-        				center: 'agendaDay,agendaWeek,month',
-        				right: 'prev,next today'
-},
-
-      displayEventTime: false, // don't show the time column in list view
-
-        googleCalendarApiKey: 'AIzaSyCwhfMkXl4-iaXUXfP8cBc1LEG3DESnky0',
-        eventSources: [
-            {
-                googleCalendarId: 'jo7mgmudv8uibuffbqtdk1isgc@group.calendar.google.com'
-              },
-              {
-                  googleCalendarId: 'hs6bk4b2nb2dvshs787timb7fo@group.calendar.google.com',
-                  className: 'nice-event'
-                }
-        ],
-        eventClick: function(event) {
-  // opens events in a popup window
-  window.open(event.url, 'gcalevent', 'width=700,height=600');
-  return false;
-  },
-    });
-});
-</script>
 
 <!--Slide Animation-->
 <script>
@@ -255,4 +210,5 @@ $(document).ready(function(){
   });
 })
 </script>
+<script src="js/gallery.js"></script>
 </html>

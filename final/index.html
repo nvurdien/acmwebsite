@@ -153,19 +153,24 @@ $(window).scroll(function () {
 
 .bgimg{
   /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
+    height: 80%;
+    /* Create the parallax scrolling effect https://farm5.staticflickr.com/4059/4696338852_bde479b169_o.jpg" */
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-  background-image: url("https://farm5.staticflickr.com/4059/4696338852_bde479b169_o.jpg");
-  min-height: 100%;
+  background-image: url("https://farm3.staticflickr.com/2824/34183849751_74e22385fd_b.jpg");
+  min-height: 80%;
 }
 .overlay{
   height:100%;
   background: rgba(0, 0, 0, 0.5);
   min-height: 100%;
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+z-index: 88;
+position: relative;
 }
 
 @media only screen and (max-device-width: 1024px) {
