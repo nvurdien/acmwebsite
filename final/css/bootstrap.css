@@ -322,7 +322,7 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #e17000;
   text-decoration: none;
 }
 
@@ -385,6 +385,7 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  color: white !important;
 }
 
 p {
@@ -7243,9 +7244,14 @@ background-color: #f6f6f6;
     }
   }
 
-li a:hover, li.active a {
-      color: #e17000 !important;
+li a:hover {
+      color: #428bca !important;
       background-color: transparent !important;
+  }
+
+  li.active a {
+   color: #e17000 !important;
+   text-decoration: underline !important;
   }
 
   #footerwrap {
@@ -7382,3 +7388,11 @@ input[type=submit]:hover{
 			.all {
 				box-shadow: 0 0 5px black;
 			}
+  /* changes hover color for icons */
+  .fa {
+      color: #428bca;
+  }
+
+  .fa:hover {
+      color: #e17000;
+  }

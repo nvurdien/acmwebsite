@@ -22,12 +22,7 @@
 <!--adds icon fonts-->
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" />
-<style>
-/* changes hover color for icons */
-.fa:hover {
-    color: #e17000;
-}
-</style>
+
 <!--So you can add code in a pretty fashion on the site-->
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
@@ -44,7 +39,7 @@
   <!--For phones or smaller screens will have a drop down menu of each link for the site-->
   <div class="navbar-header" style="padding-top:20px;">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#00274c; border-color:#005daa;">
-    <span class="sr-only">Toggle navigation</span>
+    <span class="sr-only" color="white">Toggle navigation</span>
     <span class="icon-bar" style="background-color:#005daa"></span>
     <span class="icon-bar" style="background-color:#005daa"></span>
     <span class="icon-bar" style="background-color:#005daa"></span>
@@ -65,7 +60,7 @@
 <!--End of Navigation Bar-->
 
 <!--Parallax div-->
-<div class="bgimg" style="top:-40px">
+<div class="bgimg" style="top:-40px" style="background:none">
   <!--overlay so you can read the text-->
   <div class="overlay">
     <div class="jumbotron text-center" style="background:none; padding-top:40px;"><BR><BR>
@@ -74,10 +69,10 @@
 </div>
 </div>
 <!--Section holds the contact thing-->
-<section id="contact" style="">
-            <div class="container">
-                <div class="row">
-                    <div class="about_our_company" style="margin-bottom: 20px;">
+<section id="contact" style="background-color:#0094ce">
+            <div class="container" style="background-color:#0094ce">
+                <div class="row"  style="background-color:#0094ce">
+                    <div class="about_our_company" style="margin-bottom: 20px; background-color:#0094ce;">
                         <h1 style="color:#fff;">Get In Touch With ACM</h1>
                         <p style="color:#fff;">Please send us any questions, comments or concerns.</p>
                     </div>
@@ -88,21 +83,25 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group"><!--Name-->
-                                        <input type="text" class="form-control" placeholder="Your Name *" name="name" value="<?php echo $name;?>" required>
+                                      <label for="name" style="color:#0094ce; font-size:1px;" required>Name</label>
+                                        <input type="text" class="form-control" alt="name" id="name" title="name" placeholder="Your Name *" name="name" label="" value="<?php echo $name;?>" required>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group"><!--Email-->
-                                        <input type="email" class="form-control" placeholder="Your Email *" name="email" value="<?php echo $email;?>" required>
+                                      <label for="email" style="color:#0094ce; display:none;" required>Email</label>
+                                        <input type="email" class="form-control" alt="email" id="email" title="email" placeholder="Your Email *" name="email" value="<?php echo $email;?>" required>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                   <div class="form-group"><!--Subject-->
-                                      <input type="text" class="form-control" placeholder="Your Subject *" name="subject" value="<?php echo $subject;?>" required>
+                                    <label for="subject" style="color:#0094ce; display:none;" required>Subject</label>
+                                      <input type="text" class="form-control" alt="subject" id="subject" title="subject" placeholder="Your Subject *" name="subject" value="<?php echo $subject;?>" required>
                                       <p class="help-block text-danger"></p>
                                   </div>
                                     <div class="form-group"><!--Message-->
-                                        <textarea class="form-control" placeholder="Your Message *" name="message" value="<?php echo $message;?>" required></textarea>
+                                      <label for="message" style="color:#0094ce; display:none;" required>Message</label>
+                                        <textarea class="form-control" alt="message" title="message" id="message" placeholder="Your Message *" name="message" value="<?php echo $message;?>" required></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
@@ -172,9 +171,9 @@
     <div class="col-lg-4">
           <h4>Find us on Social Media!</h4>
           <p>
-            <a href=#><span class="fa fa-twitter-square fa-2x"></span></a>
-            <a href=#><span class="fa fa-facebook-square fa-2x"></span></a>
-            <a href=#><span class="fa fa-instagram fa-2x"></span></a>
+            <a href=https://www.twitter.com/acmcsuf target="_blank"><span class="fa fa-twitter-square fa-2x"></span></a>
+            <a href=https://www.facebook.com/groups/acmcsuf  target="_blank"><span class="fa fa-facebook-square fa-2x"></span></a>
+            <a href=https://www.instagram.com/acmcsuf target="_blank"><span class="fa fa-instagram fa-2x"></span></a>
           </p>
       </div>
       <div class="col-lg-4">
@@ -228,6 +227,7 @@ $(window).scroll(function () {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
   background-image: url("img/IMG_0770.JPG");
   min-height: 50%;
 }
