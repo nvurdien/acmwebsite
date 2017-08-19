@@ -322,7 +322,7 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #e17000;
   text-decoration: none;
 }
 
@@ -366,7 +366,7 @@ img {
 }
 
 .img-circle {
-  border-radius: 50%;
+  border-radius: 100%;
 }
 
 hr {
@@ -385,6 +385,7 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+  color: white !important;
 }
 
 p {
@@ -4080,7 +4081,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 
 .nav > li.disabled > a {
@@ -7096,17 +7096,24 @@ td.visible-print {
 }
 header {
     background: #00274c;
-    height: 80px;
+    padding: 0;
+    margin: 0;
+    height: auto;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 100;
     font-family: Signika !important;
+    box-shadow: 0 2px 3px black;
 }
 .nav-up {
-    top: -80px;
+    top: -90px;
 }
+
+.nav-down {
+}
+
 body {
   font-family: Signika;
 }
@@ -7120,9 +7127,13 @@ body {
 
 	#calendar {
 		max-width: 900px;
+    padding: 1%;
 		margin: 0 auto;
     position: relative;
     z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px #C3C3C3;
 	}
 
 .jumbotron {
@@ -7159,14 +7170,22 @@ body {
   padding: 60px 50px;
   background-color: #0094ce;
   color: #005daa;
+  padding-top: 10%;
+  -moz-box-shadow:0 0 8px 0 black;
+  -webkit-box-shadow:0 0 8px 0 black;
+  box-shadow:0 0 8px 0 black;
+  z-index: 66;
+  position: relative;
 }
 
-#section{
+.section{
   padding: 60px 50px;
 background-color: #f6f6f6;
+display: inline-block;
+width: 100%;
 }
 
-#section p{
+.section p{
   color: #303030;
 }
 
@@ -7225,15 +7244,25 @@ background-color: #f6f6f6;
     }
   }
 
-li a:hover, li.active a {
-      color: #e17000 !important;
-      background-color: #fff !important;
+li a:hover {
+      color: #428bca !important;
+      background-color: transparent !important;
+  }
+
+  li.active a {
+   color: #e17000 !important;
+   text-decoration: underline !important;
   }
 
   #footerwrap {
   	padding-top: 60px;
   	padding-bottom: 60px;
   	background: #00274c;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+box-shadow: 0px 0px 8px 0px rgba(0,0,0,1);
+    z-index: 100;
+    position: relative;
   }
 
   #footerwrap p {
@@ -7254,14 +7283,8 @@ li a:hover, li.active a {
   	color: #00b3fe
   }
 
-  .hline-w {
-  	border-bottom: 2px solid #ffffff;
-  	margin-bottom: 25px;
-  }
-
   section#contact {
     background-color: #0094ce;
-    /*background-image: url('http://artdnaswitchbd.com/componants/images/map-image.png');*/
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -7285,8 +7308,9 @@ section#contact .form-group textarea.form-control {
     height: 236px;
 }
 section#contact .form-control:focus {
-    border-color: #fed136;
-    box-shadow: none;
+    border-color: black;
+    border-style: dashed;
+      box-shadow: 0 3px 4px #C3C3C3;
 }
 .gellary_bg_none img{
 	width: 100%;
@@ -7325,3 +7349,50 @@ section#contact .text-danger {
     height: 20px;
     background: #ffffff;
 }
+
+input[type=submit]{
+  color: white;
+  background-color:#00274c;
+  -webkit-transition: all .5s ease-out !important;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .55s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+input[type=submit]:hover{
+  color:#00274c;
+  background-color:#ffffff;
+  -webkit-transition: all .5s ease-out !important;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .55s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.top {
+				box-shadow: 0 -5px 5px -5px black;
+			}
+
+			.right {
+				box-shadow: 5px 0 5px -5px black;
+			}
+
+			.bottom {
+				box-shadow: 0 5px 5px -5px black;
+			}
+
+			.left {
+				box-shadow: -5px 0 5px -5px black;
+			}
+
+			.all {
+				box-shadow: 0 0 5px black;
+			}
+  /* changes hover color for icons */
+  .fa {
+      color: #428bca;
+  }
+
+  .fa:hover {
+      color: #e17000;
+  }

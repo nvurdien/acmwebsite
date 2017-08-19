@@ -1,0 +1,10 @@
+<files password.php>
+order allow,deny
+deny from all
+</files>
+
+RewriteEngine On
+RewriteRule ^about$ about.html [NC]
+RewriteRule ^board$ board.html [NC]
+RewriteRule ^contact$ about.php [NC]
+RewriteRule ^events$ event.html [NC]
