@@ -35,7 +35,7 @@
 <header class="nav-down" id="navbar">
   <div class="container">
     <!--BRAND-->
-  <a class="navbar-brand" href="index.html" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px alt="ACM Logo"></a>
+  <a class="navbar-brand" href="index" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px alt="ACM Logo"></a>
   <!--For phones or smaller screens will have a drop down menu of each link for the site-->
   <div class="navbar-header" style="padding-top:20px;">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#00274c; border-color:#005daa;">
@@ -48,10 +48,10 @@
 <!--Navigation bar links-->
   <div class="navbar-collapse collapse navbar-right" style="background-color:#00274c; padding-top:20px;">
     <ul class="nav navbar-nav">
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="board.html">The Board</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li class="active"><a href="contact.php">Contact Us</a></li>
+      <li><a href="about">About Us</a></li>
+      <li><a href="board">The Board</a></li>
+      <li><a href="events">Events</a></li>
+      <li class="active"><a href="contact">Contact Us</a></li>
       <li><a href="http://eepurl.com/cAndir" target="_blank"> Subscribe!</a></li>
     </ul>
   </div><!--/.nav-collapse -->
