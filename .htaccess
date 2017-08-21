@@ -1,3 +1,6 @@
+DirectoryIndex index.html
+ErrorDocument 404 http://acm.ecs.fullerton.edu/
+
 <files password.php>
 order allow,deny
 deny from all
@@ -6,5 +9,6 @@ deny from all
 RewriteEngine On
 RewriteRule ^about$ about.html [NC]
 RewriteRule ^board$ board.html [NC]
-RewriteRule ^contact$ about.php [NC]
+RewriteRule ^contact$ contact.php [NC]
 RewriteRule ^events$ event.html [NC]
+RewriteRule ^subscribe$ subscribe.html [NC]
