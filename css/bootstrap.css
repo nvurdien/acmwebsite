@@ -7396,11 +7396,3 @@ input[type=submit]:hover{
   .fa:hover {
       color: #e17000;
   }
-  a {
-      color: #fff !important;
-      text-decoration: underline;
-  }
-
-  a:hover {
-      color: #e17000 !important;
-  }
