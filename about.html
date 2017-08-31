@@ -33,7 +33,7 @@
 <header class="nav-down" id="navbar">
   <div class="container">
     <!--BRAND-->
-  <a class="navbar-brand" href="index" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px alt="ACM Logo"></a>
+  <a class="navbar-brand" href="/" ><img src="img/acm-desktopcta.png" onmouseover="this.src='img/acm-desktopctahover.png';" onmouseout="this.src='img/acm-desktopcta.png';" height=50px width=50px alt="ACM Logo"></a>
   <!--For phones or smaller screens will have a drop down menu of each link for the site-->
   <div class="navbar-header" style="padding-top:20px;">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#00274c; border-color:#005daa;">
@@ -49,19 +49,23 @@
       <li class="active"><a href="about">About Us</a></li>
       <li><a href="board">The Board</a></li>
       <li><a href="events">Events</a></li>
-      <li><a href="contact.php">Contact Us</a></li>
-      <li><a href="http://eepurl.com/cAndir" target="_blank"> Subscribe!</a></li>
+      <li><a href="contact">Contact Us</a></li>
+      <li><a href="subscribe"> Subscribe!</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 </header>
 <!--End of Navigation Bar-->
 
-<!--HEADER-->
-<div id="header">
-  <div class="jumbotron text-center">
-  <h1 style="font-family:Open Sans">About Us</h1>
-  <h3 style="font-family:Open Sans">ACM</h3>
+<!--End of Navigation Bar-->
+<body style="background-color:#f6f6f6;">
+<!--Parallax div-->
+<div class="bgimg" style="top:-40px">
+  <!--overlay so you can read the text-->
+  <div class="overlay">
+    <div class="jumbotron text-center" style="background:none; padding-top:40px;"><BR><BR>
+  <h1 style="font-family:Open Sans">About</h1>
+</div>
 </div>
 </div>
 
@@ -149,15 +153,27 @@ $(window).scroll(function () {
 
 .bgimg{
   /* Full height */
-    height: 100%;
+    height: 50%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     background-color: black;
-  background-image: url("https://farm5.staticflickr.com/4059/4696338852_bde479b169_o.jpg");
+  background-image: url("img/20170825_171902.jpg");
+  min-height: 50%;
+}
+
+.overlay{
+  height:100%;
+  background: rgba(0, 93, 170, 0.7);
   min-height: 100%;
+  -webkit-box-shadow: inset 0px -5px 5px 0px black;
+  -moz-box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.45);
+  box-shadow: inset 0px -5px 5px 0px rgba(0,0,0,0.45);
+z-index: 88;
+position: relative;
 }
 
 @media only screen and (max-device-width: 1024px) {
