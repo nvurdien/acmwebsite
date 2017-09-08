@@ -52,7 +52,7 @@
       <li><a href="board">The Board</a></li>
       <li><a href="events">Events</a></li>
       <li class="active"><a href="contact">Contact Us</a></li>
-      <li><a href="subscribe"> Subscribe!</a></li>
+      <li><a href="subscribe">Get Involved!</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
