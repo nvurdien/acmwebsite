@@ -7,8 +7,8 @@ deny from all
 </files>
 
 RewriteEngine On
-RewriteRule ^about$ about.html [NC]
-RewriteRule ^board$ board.html [NC]
+RewriteRule ^about$ about.php [NC]
+RewriteRule ^board$ board.php [NC]
 RewriteRule ^contact$ contact.php [NC]
-RewriteRule ^events$ event.html [NC]
-RewriteRule ^subscribe$ subscribe.html [NC]
+RewriteRule ^events$ event.php [NC]
+RewriteRule ^subscribe$ subscribe.php [NC]
