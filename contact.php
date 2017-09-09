@@ -83,7 +83,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group"><!--Name-->
-                                      <label for="name" style="color:#0094ce; font-size:1px;" required>Name</label>
+                                      <label for="name" style="color:#0094ce; display:none;" required>Name</label>
                                         <input type="text" class="form-control" alt="name" id="name" title="name" placeholder="Your Name *" name="name" label="" value="<?php echo $name;?>" required>
                                         <p class="help-block text-danger"></p>
                                     </div>
@@ -104,27 +104,26 @@
                                         <textarea class="form-control" alt="message" title="message" id="message" placeholder="Your Message *" name="message" value="<?php echo $message;?>" required></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
+                                        <div id="success"></div><!--Submit button-->
+                                        <p style="text-align:center"><input type="submit" name="but" value="Submit" class="btn btn-xl get"/></p>
+
                                 </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div><!--Submit button-->
-                                    <input type="submit" name="but" value="Submit" class="btn btn-xl get"/>
-                                </div>
+
                             </div>
                         </form>
 <?php
 	if (isset($_POST['but'])) {
 	require 'PHPMailer/PHPMailerAutoload.php';
-        include 'password.php';
+  include 'password.php';
 	$mail = new PHPMailer;
 
 	$mail->IsSMTP();
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = 'acmcsufullerton@gmail.com';                 // SMTP username
-        /* passwd is from password.php, which is ignored by the git repository. you'll need to create a php file with a variable
-            * named "passwd" to make this work */
-        $mail->Password = $passwd;
+	$mail->Username = 'acmcsufullerton@gmail.com';        // SMTP username
+  /* passwd is from password.php, which is ignored by the git repository. you'll need to create a php file with a variable
+  * named "passwd" to make this work */
+  $mail->Password = $passwd;
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 
@@ -179,8 +178,12 @@
       <div class="col-lg-4">
             <h4>Meetings</h4>
             <p>
-              ICPC Practice @ CS___<BR>
-                <i class="fa fa-hand-o-right fa-fw fa-inverse" style="font-size:1em; color:#fff"></i>Every other Friday
+              ICPC Practice @ CS101 starting 9/22/17<BR>
+                <i class="fa fa-hand-o-right fa-fw fa-inverse" style="font-size:1em; color:#fff"></i>Bi-weekly Fridays 4-6pm
+            </p>
+            <p>
+              Project Jams @ CS300 starting 9/29/17<BR>
+                <i class="fa fa-hand-o-right fa-fw fa-inverse" style="font-size:1em; color:#fff"></i>Bi-weekly Fridays 4-8pm
             </p>
         </div>
 </div>
