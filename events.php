@@ -1,4 +1,7 @@
 <?php require 'header.php' ?>
+<!--adds calendar css-->
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
 
       <li><a href="about">About Us</a></li>
       <li><a href="board">The Board</a></li>
