@@ -109,33 +109,6 @@
 
 <?php require 'footer.php' ?>
 
-<!--jquery stuff-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-<!--bootstrap js-->
-<script src="js/bootstrap.js"></script>
-<script src='js/lib/moment.min.js'></script>
-
-<!--allows header to go up with scroll and go down on up scroll-->
-<script type="text/javascript">
-var previousScroll = 0,
-    headerOrgOffset = $('header').outerHeight();
-
-$(window).scroll(function () {
-    var currentScroll = $(this).scrollTop();
-    if (currentScroll > headerOrgOffset) {
-        if (currentScroll > previousScroll) {
-            $('header').addClass('nav-up').removeClass('nav-down');
-        } else {
-            $('header').addClass('nav-down').removeClass('nav-up');
-        }
-    } else {
-            $('header').addClass('nav-down').removeClass('nav-up');
-    }
-    previousScroll = currentScroll;
-});
-</script>
 
 <!--Parallax scrolling-->
 <style>
@@ -171,42 +144,4 @@ position: relative;
 }
 
 </style>
-
-<!--Slide Animation-->
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".nav a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        document.location.hash = hash;
-      });
-    } // End if
-  });
-
-  $(document).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(document).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
 </html>

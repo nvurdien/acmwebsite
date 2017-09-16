@@ -127,26 +127,6 @@
 <script src="js/bootstrap.js"></script>
 <script src='js/lib/moment.min.js'></script>
 
-<!--allows header to go up with scroll and go down on up scroll-->
-<script type="text/javascript">
-var previousScroll = 0,
-    headerOrgOffset = $('header').outerHeight();
-
-$(window).scroll(function () {
-    var currentScroll = $(this).scrollTop();
-    if (currentScroll > headerOrgOffset) {
-        if (currentScroll > previousScroll) {
-            $('header').addClass('nav-up').removeClass('nav-down');
-        } else {
-            $('header').addClass('nav-down').removeClass('nav-up');
-        }
-    } else {
-            $('header').addClass('nav-down').removeClass('nav-up');
-    }
-    previousScroll = currentScroll;
-});
-</script>
-
 <!--Parallax scrolling-->
 <style>
 
@@ -180,6 +160,26 @@ position: relative;
 }
 
 </style>
+
+<!--allows header to go up with scroll and go down on up scroll-->
+<script type="text/javascript">
+var previousScroll = 0,
+    headerOrgOffset = $('header').outerHeight();
+
+$(window).scroll(function () {
+    var currentScroll = $(this).scrollTop();
+    if (currentScroll > headerOrgOffset) {
+        if (currentScroll > previousScroll) {
+            $('header').addClass('nav-up').removeClass('nav-down');
+        } else {
+            $('header').addClass('nav-down').removeClass('nav-up');
+        }
+    } else {
+            $('header').addClass('nav-down').removeClass('nav-up');
+    }
+    previousScroll = currentScroll;
+});
+</script>
 
 <!--Slide Animation-->
 <script>
