@@ -335,7 +335,7 @@
    <div class="cover">
    </div>
    <div class="user bottom right left top">
-       <img class="img-circle bottom right left top" src="img/acm-desktopcta.png" alt="Dipen Patel Headshot"/><!--headshot image-->
+       <img class="img-circle bottom right left top" src="img/dipen.jpg" alt="Dipen Patel Headshot"/><!--headshot image-->
    </div>
    <div class="content">
        <div class="main">
@@ -503,7 +503,7 @@
    <div class="cover">
    </div>
    <div class="user  bottom right left top">
-       <img class="img-circle bottom right left topv" src="img/acm-desktopcta.png" alt="Roy Redman Headshot"/><!--headshot image-->
+       <img class="img-circle bottom right left topv" src="img/roy.jpg" alt="Roy Redman Headshot"/><!--headshot image-->
    </div>
    <div class="content">
        <div class="main">
