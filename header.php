@@ -28,8 +28,6 @@
 
 </head>
 
-<!--Title of page-->
-<title>CSUF ACM::Contact Us</title>
 
 <!--NAVIGATION BAR START-->
 <header class="nav-down" id="navbar">

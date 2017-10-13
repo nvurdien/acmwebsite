@@ -2,13 +2,25 @@
 
       <li><a href="about">About Us</a></li>
       <li><a href="board">The Board</a></li>
-      <li><a href="events">Events</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" href="events" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span id="eventdrop" style="color:#e17000;" onMouseOver="this.style.color='#428bca';" onMouseOut="this.style.color='#e17000'">Events <span class="fa fa-caret-down" style="color:#e17000;" onMouseOver="this.style.color='#428bca';" onMouseOut="this.style.color='#e17000'"></span></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="padding-left:20px">
+          <a class="dropdown-item" href="events" style="display:block;" onMouseOver="this.style.color='#e17000'; this.style.textDecoration='none'; this.style.backgroundColor='#D3D3D3';" onMouseOut="this.style.backgroundColor='#fff'">Schedule</a>
+          <a class="dropdown-item" href="seminars" style="display:block"  onMouseOver="this.style.color='#e17000'; this.style.textDecoration='none'; this.style.backgroundColor='#D3D3D3';" onMouseOut="this.style.backgroundColor='#fff'">Seminar</a>
+          <a class="dropdown-item" href="#" style="display:block"  onMouseOver="this.style.color='#e17000'; this.style.textDecoration='none'; this.style.backgroundColor='#D3D3D3';" onMouseOut="this.style.backgroundColor='#fff'">ICPC Solutions (Coming soon)</a>
+        </div>
+      </li>
       <li><a href="contact">Contact Us</a></li>
       <li class="active"><a href="subscribe"> Get Involved!</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 </header>
+
+<!--Title of page-->
+<title>CSUF ACM::Subscribe</title>
 
 
 <!--Parallax div-->
@@ -67,15 +79,6 @@
     </section>
 
 <?php require 'footer.php' ?>
-
-
-  <!--jquery stuff-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-  <!--bootstrap js-->
-  <script src="js/bootstrap.js"></script>
-  <script src='js/lib/moment.min.js'></script>
 
   <!--Parallax scrolling-->
   <style>

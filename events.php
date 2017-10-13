@@ -5,7 +5,16 @@
 
       <li><a href="about">About Us</a></li>
       <li><a href="board">The Board</a></li>
-      <li class="active"><a href="events">Events</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" href="events" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span id="eventdrop" style="color:#e17000;" onMouseOver="this.style.color='#428bca';" onMouseOut="this.style.color='#e17000'">Events <span class="fa fa-caret-down" style="color:#e17000;" onMouseOver="this.style.color='#428bca';" onMouseOut="this.style.color='#e17000'"></span></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="padding-left:20px">
+          <a class="dropdown-item" href="events" style="display:block;" onMouseOver="this.style.color='#e17000'; this.style.textDecoration='none'; this.style.backgroundColor='#D3D3D3';" onMouseOut="this.style.backgroundColor='#fff'">Schedule</a>
+          <a class="dropdown-item" href="seminars" style="display:block"  onMouseOver="this.style.color='#e17000'; this.style.textDecoration='none'; this.style.backgroundColor='#D3D3D3';" onMouseOut="this.style.backgroundColor='#fff'">Seminar</a>
+          <a class="dropdown-item" href="#" style="display:block"  onMouseOver="this.style.color='#e17000'; this.style.textDecoration='none'; this.style.backgroundColor='#D3D3D3';" onMouseOut="this.style.backgroundColor='#fff'">ICPC Solutions (Coming soon)</a>
+        </div>
+      </li>
       <li><a href="contact">Contact Us</a></li>
       <li><a href="subscribe"> Get Involved!</a></li>
       </ul>
@@ -13,6 +22,10 @@
 </div>
 </header>
 <!--End of Navigation Bar-->
+<!--Title of page-->
+<title>CSUF ACM::Events</title>
+
+
 <body style="background-color:#f6f6f6;">
 <!--Parallax div-->
 <div class="bgimg" style="top:-40px">

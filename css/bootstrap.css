@@ -7396,3 +7396,8 @@ input[type=submit]:hover{
   .fa:hover {
       color: #e17000;
   }
+
+.dropdown-item:hover{
+  color:#e17000 !important;
+  background-color:#fff !important;
+}
