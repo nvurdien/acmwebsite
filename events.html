@@ -1,16 +1,18 @@
 <head>
     <meta charset="utf-8" />
-<!--When bookmarked on Apple Devices will use ACM image-->
-<link rel="apple-touch-icon" sizes="76x76" href="img/acm-desktopcta.png">
-<!--icon for page-->
-<link rel="icon" type="image/png" href="img/acm-desktopcta.png">
-<!--Adds compatibility with edge and chrome-->
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<!--changes scale when used on phone-->
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-<meta name="viewport" content="width=device-width" />
+    <!--When bookmarked on Apple Devices will use ACM image-->
+    <link rel="apple-touch-icon" sizes="76x76" href="img/acm-desktopcta.png">
+    <!--icon for page-->
+    <link rel="icon" type="image/png" href="img/acm-desktopcta.png">
+    <!--Adds compatibility with edge and chrome-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--changes scale when used on phone-->
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="static/css/fullcalendar.css" />
+    <link rel="stylesheet" href="static/css/fullcalendar.print.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js"></script>
@@ -23,12 +25,12 @@
             <li><a href="about">About Us</a></li>
             <li><a href="board">The Board</a></li>
             <!-- This is the container enabling the JavaScript -->
-            <li class="uk-parent">
+            <li class="uk-parent uk-active">
                 <!-- This is the menu item toggling the dropdown -->
-                <a href="events">Events</a>
+                <a href="#">Events</a>
                 <!-- This is the dropdown -->
                 <ul class="uk-nav-sub">
-                    <li><a href="events">Schedule</a></li>
+                    <li class="uk-active"><a href="events">Schedule</a></li>
                     <li><a href="seminars">Seminars</a></li>
                 </ul>
             </li>
@@ -38,13 +40,14 @@
     </div>
 </div>
 
-<!--Header-->
+<!-- Header -->
 
-<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('https://farm3.staticflickr.com/2824/34183849751_74e22385fd_b.jpg'); ">
-    <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-        <div class="uk-overlay uk-overlay-primary" uk-parallax="y: 50,0">
-            <h1 class="uk-heading-line">Association for Computing Machinery</h1>
-            <p uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;">CSUF ACM. Welcome.</p>
+<div class="uk-inline uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url('img/IMG_0586.JPG'); height: 30%; background-position: center;">
+    <div class="uk-width-1-2@m uk-text-center" style="top:0;">
+        <div class="uk-position-cover uk-overlay uk-flex-center" style="margin:0 auto; padding: 0 auto; top:0; position:absolute;">
+            <BR>
+            <h1 class="uk-heading-line">Our Events</h1>
+            <p uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;">Come and Participate.</p>
         </div>
     </div>
 </div>
@@ -63,13 +66,13 @@
             <li><a href="about" class="uk-button uk-button-text">About Us</a></li>
             <li><a href="board" class="uk-button uk-button-text">The Board</a></li>
             <!-- This is the container enabling the JavaScript -->
-            <li>
+            <li class="uk-active">
                 <!-- This is the menu item toggling the dropdown -->
-                <a href="events" class="uk-button uk-button-text">Events</a>
+                <a href="#" class="uk-button uk-button-text">Events</a>
                 <!-- This is the dropdown -->
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li><a href="events">Schedule</a></li>
+                        <li class="uk-active"><a href="events">Schedule</a></li>
                         <li><a href="seminars">Seminars</a></li>
                     </ul>
                 </div>
@@ -83,28 +86,13 @@
     </div>
 </nav>
 
-
-
-<!-- What we write -->
+<!--Section stuff-->
 
 <div class="uk-section uk-section-default">
     <div class="uk-container">
-
-        <h3>Who are we?</h3>
-
-        <p>A club and community for students with a passion for computer science.</p>
-
-
-        <h3>Interested in getting involved?</h3>
-
-        <p>Click the links above!</p>
-
-
+        <div id='calendar'></div>
     </div>
 </div>
-
-
-
 
 <!--Footer-->
 
@@ -141,3 +129,41 @@
         </div>
     </div>
 </div>
+    
+    
+<script src="static/js/moment.min.js"></script>
+<script src="static/js/fullcalendar.min.js"></script>
+<script src="static/js/gcal.min.js"></script>
+
+<!--Calendar API key and other information for calendar-->
+
+<script>
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+
+            header: {
+                left: 'title',
+                center: 'agendaDay,agendaWeek,month',
+                right: 'prev,next today'
+            },
+
+            displayEventTime: false, // don't show the time column in list view
+
+            googleCalendarApiKey: 'AIzaSyCwhfMkXl4-iaXUXfP8cBc1LEG3DESnky0',
+            eventSources: [{
+                    googleCalendarId: 'jo7mgmudv8uibuffbqtdk1isgc@group.calendar.google.com'
+                },
+                {
+                    googleCalendarId: 'hs6bk4b2nb2dvshs787timb7fo@group.calendar.google.com',
+                    className: 'nice-event'
+                }
+            ],
+            eventClick: function(event) {
+                // opens events in a popup window
+                window.open(event.url, 'gcalevent', 'width=700,height=600');
+                return false;
+            },
+        });
+    });
+
+</script>
