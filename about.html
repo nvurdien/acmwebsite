@@ -9,6 +9,9 @@
     <!--changes scale when used on phone-->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
+    
+    <title>CSUF ACM About</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -40,9 +43,9 @@
 
 <!-- Header -->
 
-<div class="uk-inline uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url('img/20170825_171902.jpg'); height: 30%; background-position: top;">
-    <div class="uk-width-1-2@m uk-text-center" style="top:0;">
-        <div class="uk-position-cover uk-overlay uk-flex-center" style="margin:0 auto; padding: 0 auto; top:0; position:absolute;">
+<div class="uk-background-cover uk-overflow-hidden uk-light uk-flex uk-background-blend-multiply uk-background-primary uk-height-medium uk-flex-center uk-flex-middle" style="background-image: url('img/20170825_171902.jpg'); background-position: top;">
+    <div class="uk-width-1-2@m uk-text-center">
+        <div class="uk-overlay uk-flex-center">
             <BR>
             <h1 class="uk-heading-line">About Us</h1>
             <p uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;">What we're about.</p>
@@ -52,11 +55,11 @@
 
 <!--Navigation Links-->
 
-<nav class="uk-navbar-container uk-navbar-primary" uk-navbar style="position: relative; z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top:0">
+<nav class="uk-navbar-container uk-navbar-primary" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top:0">
     <div class="uk-navbar-left">
-        <div class="uk-inline-clip uk-transition-toggle" tabindex="">
-            <img class="" src="http://acm.ecs.fullerton.edu/img/acm-desktopcta.png" alt="" height="75" width="75">
-            <a href="/"><img class="uk-transition-fade uk-position-cover" src="http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png" height="75" width="75" alt=""></a>
+        <div class="uk-inline-clip uk-transition-toggle uk-margin-left" tabindex="">
+            <img class="" src="http://acm.ecs.fullerton.edu/img/acm-desktopcta.png" alt="" height="50" width="50">
+            <a href="/"><img class="uk-transition-fade uk-position-cover" src="http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png" height="50" width="50" alt=""></a>
         </div>
     </div>
     <div class="uk-navbar-right">
@@ -95,7 +98,7 @@
 
         <h3>What about us?</h3>
         <p>
-            We love to offer both leadership and skill building projects. If you are interested in a board position please contact us. As for skills, if you are interested in starting a workshop or learning a particular skill please contact us!
+            We love to offer both leadership and skill building projects. If you are interested in a board position please <a href="/contact" class="uk-link-muted">contact us</a>. As for skills, if you are interested in starting a workshop or learning a particular skill please <a href="/contact" class="uk-link-muted">contact us</a>!
         </p>
 
 
@@ -103,7 +106,7 @@
         <p>
             The Student Chapter of ACM at CSUF is an open organization to any student with interest in computers and/or computing. The ACM holds monthly general meetings throughout the semester. These meetings provide an excellent environment for students in which to exchange views, opinions, meet new friends and trade secret techniques. In addition to regular meetings, CSUF's Student Chapter of the ACM hosts selected speaker forums, monthly contests, software and hardware workshops, arranges company tours and plans social activities throughout the semester. It is free for everyone and everyone is welcome, and encouraged to attend the meetings!
 
-            <div class="uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 500; repeat: true">
+            <div class="uk-child-width-1-4@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 500; repeat: true">
                 <div>
                     <center><i class="fa fa-gift fa-3x" style="color:#303030"></i>
                         <h2>Projects</h2>
@@ -122,14 +125,14 @@
 
             </div>
             <p>
-                Let us know if you have an idea for a project or workshop, so we can start planning right away!
+                Let us know <a href="/contact" class="uk-link-muted">here</a> if you have an idea for a project or workshop, so we can start planning right away!
             </p>
     </div>
 </div>
 
 <!--Footer-->
 
-<div class="uk-section uk-section-primary uk-light">
+<div class="uk-section uk-section-primary">
     <div class="uk-container">
 
         <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
@@ -142,9 +145,9 @@
             <div>
                 <h3>Find us on Social Media</h3>
                 <p>
-                    <a href="https://www.twitter.com/acmcsuf" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-                    <a href="https://www.facebook.com/groups/acmcsuf" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
-                    <a href="https://www.instagram.com/acmcsuf" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+                    <a href="https://www.twitter.com/acmcsuf" target="_blank" title="@acmcsuf" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                    <a href="https://www.facebook.com/groups/acmcsuf" target="_blank" title="/group/acmcsuf" uk-tooltip="pos: top" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+                    <a href="https://www.instagram.com/acmcsuf" target="_blank" title="@acmcsuf" uk-tooltip="pos: right" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
                 </p>
             </div>
 

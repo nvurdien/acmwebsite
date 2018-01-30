@@ -11,6 +11,9 @@
     <!--changes scale when used on phone-->
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
+    
+    <title>CSUF ACM Contact</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -42,23 +45,23 @@
 
 <!-- Header -->
 
-<div class="uk-inline uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top uk-background-blend-multiply uk-background-primary uk-background-cover uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url('img/IMG_0770.JPG'); height: 30%; background-position: bottom;">
-    <div class="uk-width-1-2@m uk-text-center" style="top:0;">
-        <div class="uk-position-cover uk-overlay uk-flex-center" style="margin:0 auto; padding: 0 auto; top:0; position:absolute;">
-            <BR>
-            <h1 class="uk-heading-line">Contact Us</h1>
-            <p uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;">Let's keep in touch.</p>
+<div style="background-image: url('img/IMG_0770.JPG'); background-position: center;" class="uk-cover-container uk-flex uk-flex-center uk-height-medium uk-background-cover uk-overflow-hidden uk-light uk-background-blend-multiply uk-background-primary">
+    <div class="uk-width-1-2@m uk-text-center">
+        <div class="uk-overlay">
+            <br>
+            <h1 class="uk-heading-line uk-text-center">Contact Us</h1>
+            <p class="uk-text-center" uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;" style="transform: scale(0.5); opacity: 0;">Let's keep in touch.</p>
         </div>
     </div>
 </div>
 
 <!--Navigation Links-->
 
-<nav class="uk-navbar-container uk-navbar-primary" uk-navbar style="position: relative; z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top:0">
+<nav class="uk-navbar-container uk-navbar-primary" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top:0">
     <div class="uk-navbar-left">
-        <div class="uk-inline-clip uk-transition-toggle" tabindex="">
-            <img class="" src="http://acm.ecs.fullerton.edu/img/acm-desktopcta.png" alt="" height="75" width="75">
-            <a href="/"><img class="uk-transition-fade uk-position-cover" src="http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png" height="75" width="75" alt=""></a>
+        <div class="uk-inline-clip uk-transition-toggle uk-margin-left" tabindex="">
+            <img class="" src="http://acm.ecs.fullerton.edu/img/acm-desktopcta.png" alt="" height="50" width="50">
+            <a href="/"><img class="uk-transition-fade uk-position-cover" src="http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png" height="50" width="50" alt=""></a>
         </div>
     </div>
     <div class="uk-navbar-right">
@@ -111,7 +114,13 @@
 
         $mail->Subject = $_POST['subject'];
         $mail->Body    = "Message from " .$_POST['name']. "\nReply to this email: ". $_POST['email'] . "\n\n" .$_POST['message'];
-        if(!$mail->send()) {
+        if(!$_POST['name'] || !$_POST['email'] || !$_POST['message'] || !$_POST['subject']){
+            echo '<div class="uk-alert-danger" uk-alert>
+    <a class="uk-alert-close" uk-close></a>
+    <p>Please fill out the form completely.</p>
+</div>';
+        }
+        else if(!$mail->send()) {
         echo '<div class="uk-alert-danger" uk-alert>
     <a class="uk-alert-close" uk-close></a>
     <p>Message could not be sent.</p>
@@ -131,13 +140,15 @@
                     <h1>Get in Touch With ACM</h1>
 
                     <legend class="uk-legend">Please send us any questions, comments or concerns.</legend>
+                    
+                    <p>You may use the form or email us at <a href="mailto:acmcsufullerton@gmail.com"> acmcsufullerton@gmail.com</a></p>
 
                     <div class="uk-margin">
                         <input class="uk-input" id="name" name="name" alt="name" type="text" placeholder="Your Name*" required>
                     </div>
 
                     <div class="uk-margin">
-                        <input class="uk-input" id="email" name="email" alt="email" type="text" placeholder="Your Email*" required>
+                        <input class="uk-input" id="email" name="email" alt="email" type="email" placeholder="Your Email*" required>
                     </div>
 
                     <div class="uk-margin">
@@ -161,7 +172,7 @@
 
 <!--Footer-->
 
-<div class="uk-section uk-section-primary uk-light">
+<div class="uk-section uk-section-primary">
     <div class="uk-container">
 
         <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
@@ -174,9 +185,9 @@
             <div>
                 <h3>Find us on Social Media</h3>
                 <p>
-                    <a href="https://www.twitter.com/acmcsuf" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-                    <a href="https://www.facebook.com/groups/acmcsuf" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
-                    <a href="https://www.instagram.com/acmcsuf" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+                    <a href="https://www.twitter.com/acmcsuf" target="_blank" title="@acmcsuf" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                    <a href="https://www.facebook.com/groups/acmcsuf" target="_blank" title="/group/acmcsuf" uk-tooltip="pos: top" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+                    <a href="https://www.instagram.com/acmcsuf" target="_blank" title="@acmcsuf" uk-tooltip="pos: right" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
                 </p>
             </div>
 
