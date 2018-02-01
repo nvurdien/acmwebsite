@@ -18,6 +18,9 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js"></script>
+      <script src="static/js/browser.min.js"></script>
+      <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+      <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   </head>
 
   <!-- This is the off-canvas sidebar -->
@@ -91,45 +94,10 @@
 
   <!--Section stuff-->
 
-  <div class="uk-section uk-section-default uk-margin-small-left uk-margin-small-right" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
+  <div class="uk-section uk-section-default uk-margin-small-left uk-margin-small-right" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true" role="main">
 
       <h1 class="uk-heading-bullet">Seminars</h1>
-
-      <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center" role="main" uk-grid>
-
-
-
-
-  <!--        Place new seminars above please-->
-
-
-
-          <div>
-              <div class="uk-card uk-card-default uk-card-body uk-card-hover">
-                  <p class="uk-card-badge uk-margin-remove-top uk-label">CS-500</p>
-                  <div class="uk-card-body">
-                      <h3 class="uk-card-title uk-margin-remove-bottom">Seminar Name</h3>
-                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">February 6, 2018 12:00PM-1:00PM</time></p>
-                      <p>Presented by: William McCarthy</p>
-                      <p>Description</p>
-                  </div>
-              </div>
-          </div>
-
-
-
-          <div>
-              <div class="uk-card uk-card-default uk-card-body uk-card-hover">
-                  <p class="uk-card-badge uk-margin-remove-top uk-label">CS-500</p>
-                  <div class="uk-card-body">
-                      <h3 class="uk-card-title uk-margin-remove-bottom">Seminar Name</h3>
-                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">October 10, 2017</time></p>
-                      <p>Presented by: Sharma Rishabh</p>
-                      <p>Description</p>
-                  </div>
-              </div>
-          </div>
-
+      <div id="seminars">
       </div>
 
   </div>
@@ -151,9 +119,9 @@
               <div>
                   <h3>Find us on Social Media</h3>
                   <p>
-                      <a href="https://www.twitter.com/acmcsuf" target="_blank" title="@acmcsuf" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
-                      <a href="https://www.facebook.com/groups/acmcsuf" target="_blank" title="/group/acmcsuf" uk-tooltip="pos: top" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
-                      <a href="https://www.instagram.com/acmcsuf" target="_blank" title="@acmcsuf" uk-tooltip="pos: right" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+                    <a href="https://www.twitter.com/acmcsuf" aria-label="twitter link" target="_blank" title="@acmcsuf" uk-tooltip="pos: bottom" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                    <a href="https://www.facebook.com/groups/acmcsuf" aria-label="facebook group link" target="_blank" title="/group/acmcsuf" uk-tooltip="pos: top" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+                    <a href="https://www.instagram.com/acmcsuf" aria-label="instagram link" target="_blank" title="@acmcsuf" uk-tooltip="pos: right" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
                   </p>
               </div>
 
@@ -171,4 +139,6 @@
           </div>
       </div>
   </div>
+  <script src="static/js/SeminarsList.js"></script>
+  <script type="text/babel" src="static/js/Seminars.js"></script>
 </html>

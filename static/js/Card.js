@@ -33,9 +33,9 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
               <p>{description}</p>
           </div>
           <div className="uk-card-footer">
-            <a href={"mailto:" + email} className="uk-icon-button  uk-margin-small-right uk-animation-scale-up" uk-icon="icon: mail"></a>
-            {github ? (<a href={github} target="_blank" className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: github"></a>) : null}
-            {linkedin ? (<a href={linkedin} target="_blank" className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: linkedin"></a>) : null}
+            <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right uk-animation-scale-up" uk-icon="icon: mail"></a>
+            {github ? (<a href={github} target="_blank" aria-label={name + "'s github link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: github"></a>) : null}
+            {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s linkedin link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: linkedin"></a>) : null}
           </div>
 
       </div>
