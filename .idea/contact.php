@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
       <meta charset="utf-8" />
@@ -10,12 +11,10 @@
       <!--changes scale when used on phone-->
       <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 
-      <title>CSUF ACM Events</title>
+      <title>CSUF ACM Contact</title>
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="static/css/fullcalendar.css" />
-      <link rel="stylesheet" href="static/css/fullcalendar.print.css" />
       <link rel="stylesheet" href="static/css/style.css" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
@@ -29,16 +28,16 @@
               <li><a href="about">About Us</a></li>
               <li><a href="board">The Board</a></li>
               <!-- This is the container enabling the JavaScript -->
-              <li class="uk-parent uk-active">
+              <li class="uk-parent">
                   <!-- This is the menu item toggling the dropdown -->
-                  <a href="#">Events</a>
+                  <a href="events">Events</a>
                   <!-- This is the dropdown -->
                   <ul class="uk-nav-sub">
-                      <li class="uk-active"><a href="events">Schedule</a></li>
+                      <li><a href="events">Schedule</a></li>
                       <li><a href="seminars">Seminars</a></li>
                   </ul>
               </li>
-              <li><a href="contact">Contact Us</a></li>
+              <li class="uk-active"><a href="contact">Contact Us</a></li>
               <li><a href="subscribe">Get Involved</a></li>
           </ul>
       </div>
@@ -46,12 +45,12 @@
 
   <!-- Header -->
 
-  <div class="uk-background-cover uk-overflow-hidden uk-light uk-flex uk-background-blend-multiply uk-background-primary uk-height-medium uk-flex-center uk-flex-middle" style="background-image: url('img/IMG_0586.JPG'); background-position: center;">
+  <div style="background-image: url('img/IMG_0770.JPG'); background-position: center;" class="uk-cover-container uk-flex uk-flex-center uk-height-medium uk-background-cover uk-overflow-hidden uk-light uk-background-blend-multiply uk-background-primary">
       <div class="uk-width-1-2@m uk-text-center">
-          <div class="uk-overlay uk-flex-center">
-              <BR>
-              <h1 class="uk-heading-line">Our Events</h1>
-              <p uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;">Come and Participate.</p>
+          <div class="uk-overlay">
+              <br>
+              <h1 class="uk-heading-line uk-text-center">Contact Us</h1>
+              <p class="uk-text-center" uk-parallax="opacity: 0,1; scale: 0.5,1; viewport: 0.5;" style="transform: scale(0.5); opacity: 0;">Let's keep in touch.</p>
           </div>
       </div>
   </div>
@@ -70,18 +69,18 @@
               <li><a href="about" class="uk-button uk-button-text">About Us</a></li>
               <li><a href="board" class="uk-button uk-button-text">The Board</a></li>
               <!-- This is the container enabling the JavaScript -->
-              <li class="uk-active">
+              <li>
                   <!-- This is the menu item toggling the dropdown -->
-                  <a href="#" class="uk-button uk-button-text">Events</a>
+                  <a href="events" class="uk-button uk-button-text">Events</a>
                   <!-- This is the dropdown -->
                   <div class="uk-navbar-dropdown">
                       <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="events">Schedule</a></li>
+                          <li><a href="events">Schedule</a></li>
                           <li><a href="seminars">Seminars</a></li>
                       </ul>
                   </div>
               </li>
-              <li><a href="contact" class="uk-button uk-button-text">Contact Us</a></li>
+              <li class="uk-active"><a href="contact" class="uk-button uk-button-text">Contact Us</a></li>
               <li><a href="subscribe" class="uk-button uk-button-text">Get Involved</a></li>
           </ul>
           <div class="uk-navbar-right uk-hidden@s">
@@ -94,7 +93,95 @@
 
   <div class="uk-section uk-section-default" role="main">
       <div class="uk-container">
-          <div id='calendar'></div>
+          <?php
+  	if (isset($_POST['but'])) {
+          require 'PHPMailer/PHPMailerAutoload.php';
+          include 'password.php';
+          $mail = new PHPMailer;
+
+          $mail->IsSMTP();
+          $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+          $mail->SMTPAuth = true;                               // Enable SMTP authentication
+          $mail->Username = 'acmcsufullerton@gmail.com';        // SMTP username
+          /* passwd is from password.php, which is ignored by the git repository. you'll need to create a php file with a variable
+          * named "passwd" to make this work */
+          $mail->Password = $passwd;
+          $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+          $mail->Port = 587;                                    // TCP port to connect to
+
+          $mail->setFrom('acmcsufullerton@gmail.com', 'Website Form Submission');
+          $mail->addAddress('acmcsufullerton@gmail.com', 'Website Form Submission');     // Add a recipient
+
+          $mail->Subject = $_POST['subject'];
+          $mail->Body    = "Message from " .$_POST['name']. "\nReply to this email: ". $_POST['email'] . "\n\n" .$_POST['message'];
+          if(!$_POST['name'] || !$_POST['email'] || !$_POST['message'] || !$_POST['subject']){
+              echo '<div class="uk-alert-danger" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p>Please fill out the form completely.</p>
+  </div>';
+          }
+          else if(!$mail->send()) {
+          echo '<div class="uk-alert-danger" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p>Message could not be sent.</p>
+  </div>';
+          echo 'Mailer Error: ' . $mail->ErrorInfo;
+          } else {//says message is sent
+              echo '<div class="uk-alert-success" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p>Message Sent! Thank you!</p>
+  </div>';
+          }
+
+      }
+  ?>
+              <form method="post" class="" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+                  <fieldset class="uk-fieldset">
+                      <h1 class="uk-text-center">Get in Touch With ACM</h1>
+
+                      <legend class="uk-legend uk-text-center">Please send us any questions, comments or concerns.</legend>
+
+                      <p class="uk-text-center">You may use the form or email us at <a href="mailto:acmcsufullerton@gmail.com" class="uk-link-muted"> acmcsufullerton@gmail.com</a></p>
+
+
+
+                      <div class="uk-margin">
+                        <label class="uk-form-label" for="name">Name<span class="required">*</span></label>
+                        <div class="uk-form-controls">
+                          <input class="uk-input" id="name" name="name" alt="name" type="text" placeholder="" required>
+                        </div>
+                      </div>
+
+                      <div class="uk-margin">
+                        <label class="uk-form-label" for="email">Email<span class="required">*</span></label>
+                        <div class="uk-form-controls">
+                          <input class="uk-input" id="email" name="email" alt="email" type="email" placeholder="" required>
+                        </div>
+                      </div>
+
+                      <div class="uk-margin">
+                        <label class="uk-form-label" for="subject">Subject<span class="required">*</span></label>
+                        <div class="uk-form-controls">
+                          <input class="uk-input" id="subject" name="subject" alt="subject" type="text" placeholder="" required>
+                        </div>
+                      </div>
+
+                      <div class="uk-margin">
+                        <label class="uk-form-label" for="message">Message<span class="required">*</span></label>
+                        <div class="uk-form-controls">
+                          <textarea class="uk-textarea" id="message" name="message" alt="message" rows="5" placeholder="" required></textarea>
+                        </div>
+                      </div>
+
+                      <div class="uk-margin uk-text-center">
+                        <div class="uk-form-controls">
+                          <button class="uk-button uk-button-default" id="but" name="but">Submit</button>
+                        </div>
+                      </div>
+
+                  </fieldset>
+              </form>
+
       </div>
   </div>
 
@@ -133,43 +220,4 @@
           </div>
       </div>
   </div>
-
-
-
-  <script src="static/js/moment.min.js"></script>
-  <script src="static/js/fullcalendar.min.js"></script>
-  <script src="static/js/gcal.min.js"></script>
-
-  <!--Calendar API key and other information for calendar-->
-
-  <script>
-      $(document).ready(function() {
-          $('#calendar').fullCalendar({
-
-              header: {
-                  left: 'title',
-                  center: 'agendaDay,agendaWeek,month',
-                  right: 'prev,next today'
-              },
-
-              displayEventTime: false, // don't show the time column in list view
-
-              googleCalendarApiKey: 'AIzaSyCwhfMkXl4-iaXUXfP8cBc1LEG3DESnky0',
-              eventSources: [{
-                      googleCalendarId: 'jo7mgmudv8uibuffbqtdk1isgc@group.calendar.google.com'
-                  },
-                  {
-                      googleCalendarId: 'hs6bk4b2nb2dvshs787timb7fo@group.calendar.google.com',
-                      className: 'nice-event'
-                  }
-              ],
-              eventClick: function(event) {
-                  // opens events in a popup window
-                  window.open(event.url, 'gcalevent', 'width=700,height=600');
-                  return false;
-              },
-          });
-      });
-
-  </script>
 </html>
