@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3189f2c7-7e90-476d-9759-b9986c4a171c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
       <change beforePath="$PROJECT_DIR$/board.html" afterPath="$PROJECT_DIR$/board.html" />
       <change beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
-      <change beforePath="$PROJECT_DIR$/events.html" afterPath="$PROJECT_DIR$/events.html" />
-      <change beforePath="$PROJECT_DIR$/img/15844524_1297254926998904_763713103847688498_o.jpg" afterPath="$PROJECT_DIR$/img/15844524_1297254926998904_763713103847688498_o.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/20170825_171844.jpg" afterPath="$PROJECT_DIR$/img/20170825_171844.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/20170825_171902.jpg" afterPath="$PROJECT_DIR$/img/20170825_171902.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/20170825_172118.jpg" afterPath="$PROJECT_DIR$/img/20170825_172118.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/20170825_172230.jpg" afterPath="$PROJECT_DIR$/img/20170825_172230.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/20170914_132704.jpg" afterPath="$PROJECT_DIR$/img/20170914_132704.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/IMG_0586.JPG" afterPath="$PROJECT_DIR$/img/IMG_0586.JPG" />
-      <change beforePath="$PROJECT_DIR$/img/IMG_0645.JPG" afterPath="$PROJECT_DIR$/img/IMG_0645.JPG" />
-      <change beforePath="$PROJECT_DIR$/img/IMG_0770.JPG" afterPath="$PROJECT_DIR$/img/IMG_0770.JPG" />
-      <change beforePath="$PROJECT_DIR$/img/charles.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/cheerleadt.jpg" afterPath="$PROJECT_DIR$/img/cheerleadt.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/chris.jpg" afterPath="$PROJECT_DIR$/img/chris.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/dipen.jpg" afterPath="$PROJECT_DIR$/img/dipen.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/huy.jpg" afterPath="$PROJECT_DIR$/img/huy.jpg" />
-      <change beforePath="$PROJECT_DIR$/img/subscribe.JPG" afterPath="$PROJECT_DIR$/img/subscribe.JPG" />
-      <change beforePath="$PROJECT_DIR$/img/william.jpg" afterPath="$PROJECT_DIR$/img/william.jpg" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/seminars.html" afterPath="$PROJECT_DIR$/seminars.html" />
-      <change beforePath="$PROJECT_DIR$/static/css/fullcalendar.css" afterPath="$PROJECT_DIR$/static/css/fullcalendar.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/fullcalendar.print.css" afterPath="$PROJECT_DIR$/static/css/fullcalendar.print.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/static/js/AdvisorsList.js" afterPath="$PROJECT_DIR$/static/js/AdvisorsList.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/Fall2017List.js" afterPath="$PROJECT_DIR$/static/js/Fall2017List.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/SeminarsList.js" afterPath="$PROJECT_DIR$/static/js/SeminarsList.js" />
       <change beforePath="$PROJECT_DIR$/static/js/Spring2018List.js" afterPath="$PROJECT_DIR$/static/js/Spring2018List.js" />
       <change beforePath="$PROJECT_DIR$/subscribe.html" afterPath="$PROJECT_DIR$/subscribe.html" />
     </list>
@@ -51,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/board.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5377" lean-forward="false" selection-start-line="0" selection-start-column="5377" selection-end-line="0" selection-end-column="5377" />
+              <caret line="0" column="595" lean-forward="false" selection-start-line="0" selection-start-column="595" selection-end-line="0" selection-end-column="595" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -63,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5570" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5682" />
+              <caret line="0" column="598" lean-forward="false" selection-start-line="0" selection-start-column="598" selection-end-line="0" selection-end-column="598" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
@@ -77,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/seminars.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="4828" lean-forward="false" selection-start-line="0" selection-start-column="4828" selection-end-line="0" selection-end-column="4828" />
+              <caret line="0" column="598" lean-forward="false" selection-start-line="0" selection-start-column="598" selection-end-line="0" selection-end-column="598" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscribe.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="subscribe.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subscribe.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5989" lean-forward="false" selection-start-line="0" selection-start-column="5989" selection-end-line="0" selection-end-column="5989" />
+              <caret line="0" column="599" lean-forward="false" selection-start-line="0" selection-start-column="599" selection-end-line="0" selection-end-column="599" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
@@ -100,11 +75,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Spring2018List.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/Spring2018List.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="2106" lean-forward="false" selection-start-line="0" selection-start-column="2106" selection-end-line="0" selection-end-column="2106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="2336" lean-forward="false" selection-start-line="41" selection-start-column="2336" selection-end-line="41" selection-end-column="2336" />
+            <state relative-caret-position="0">
+              <caret line="0" column="612" lean-forward="false" selection-start-line="0" selection-start-column="612" selection-end-line="0" selection-end-column="612" />
               <folding />
             </state>
           </provider>
@@ -122,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -140,6 +125,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;html lang=en&gt;&lt;meta charset=utf-8&gt;&lt;link href=img/acm-desktopcta.png rel=apple-touch-icon sizes=76x76&gt;&lt;link href=img/acm-desktopcta.png rel=icon type=image/png&gt;&lt;meta content=&quot;IE=edge,chrome=1&quot;http-equiv=X-UA-Compatible&gt;&lt;meta content=&quot;width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0&quot;name=viewport&gt;&lt;title&gt;CSUF ACM Homepage&lt;/title&gt;&lt;link href=https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css rel=stylesheet&gt;&lt;link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet&gt;&lt;link href=static/css/style.css rel=stylesheet&gt;&lt;script src=https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js&gt;&lt;/script&gt;&lt;script src=https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js&gt;&lt;/script&gt;&lt;script src=https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js&gt;&lt;/script&gt;&lt;style&gt;.uk-navbar-container .uk-navbar-item:not(.uk-logo),.uk-navbar-container .uk-navbar-toggle,.uk-navbar-nav&gt;li&gt;a{height:70px;font-size:13px}.uk-navbar-container .uk-navbar-nav&gt;li&gt;a{position:relative;color:#fff}.uk-navbar-container .uk-navbar-nav&gt;li&gt;a:hover{position:relative;color:#fff}.uk-navbar-container .uk-navbar-nav&gt;li&gt;a::before{content:'';display:block;position:absolute;left:15px;right:calc(102% - 15px);bottom:20px;height:1px;background-color:currentColor;transition:.3s ease-in-out;transition-property:right}.uk-navbar-container .uk-navbar-nav&gt;li&gt;a:hover::before{right:15px}.uk-nav&gt;li.uk-active&gt;a{position:relative}.uk-nav&gt;li.uk-active&gt;a:before{content:&quot;&quot;;position:absolute;top:15px;left:-25px;width:15px;border-top:1px solid #1e87f0}.uk-nav .uk-nav-header{padding:8px 0;border-bottom:1px solid #e5e5e5}&lt;/style&gt;&lt;div id=offcanvas-navbar uk-offcanvas=&quot;mode: reveal; flip: true;&quot;&gt;&lt;div class=uk-offcanvas-bar&gt;&lt;ul class=&quot;uk-nav uk-nav-default&quot;&gt;&lt;li&gt;&lt;a href=about&gt;About Us&lt;/a&gt;&lt;li&gt;&lt;a href=board&gt;The Board&lt;/a&gt;&lt;li class=uk-parent&gt;&lt;a href=events&gt;Events&lt;/a&gt;&lt;ul class=uk-nav-sub&gt;&lt;li&gt;&lt;a href=events&gt;Schedule&lt;/a&gt;&lt;li&gt;&lt;a href=seminars&gt;Seminars&lt;/a&gt;&lt;/ul&gt;&lt;li&gt;&lt;a href=contact&gt;Contact Us&lt;/a&gt;&lt;li&gt;&lt;a href=subscribe&gt;Get Involved&lt;/a&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;uk-flex uk-background-cover&quot;style=background-image:url(img/4696338852_bde479b169_o.jpg);height:calc(100vh);min-height:calc(100vh) alt=&quot;ACM Background Picture&quot;title=&quot;ACM Background Picture&quot;uk-parallax=&quot;bgy: -200&quot;&gt;&lt;div class=&quot;uk-flex uk-position-cover uk-background-primary uk-blend-multiply&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;uk-flex uk-position-cover uk-flex-center uk-flex-middle&quot;&gt;&lt;div class=&quot;uk-light uk-child-width-1-1@s uk-grid-collapse uk-text-center&quot;uk-grid&gt;&lt;div&gt;&lt;p&gt;&lt;h1 class=uk-heading-primary&gt;Association for Computing Machinery&lt;/h1&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=transform:scale(.5);opacity:0 uk-parallax=&quot;opacity: 0,1; scale: 0.5,1; viewport: 0.5;&quot;&gt;CSUF ACM. Welcome.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=uk-position-top&gt;&lt;div class=uk-light&gt;&lt;nav class=&quot;uk-navbar-container uk-navbar-transparent&quot;uk-navbar&gt;&lt;div class=uk-navbar-left&gt;&lt;div class=&quot;uk-inline-clip uk-margin-left uk-transition-toggle&quot;tabindex=&quot;&quot;&gt;&lt;img alt=&quot;home link logo&quot;height=50 src=http://acm.ecs.fullerton.edu/img/acm-desktopcta.png width=50&gt; &lt;a href=/ &gt;&lt;img alt=&quot;hover home link logo&quot;height=50 src=http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png width=50 class=&quot;uk-position-cover uk-transition-fade&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=uk-navbar-right&gt;&lt;ul class=&quot;uk-navbar-nav uk-visible@s&quot;&gt;&lt;li&gt;&lt;a href=about&gt;About Us&lt;/a&gt;&lt;li&gt;&lt;a href=board&gt;The Board&lt;/a&gt;&lt;li&gt;&lt;a href=events aria-expanded=false&gt;Events&lt;/a&gt;&lt;div class=&quot;uk-navbar-dropdown uk-navbar-dropdown-bottom-left&quot;style=left:1462.11px;top:80px&gt;&lt;ul class=&quot;uk-nav uk-navbar-dropdown-nav&quot;&gt;&lt;li&gt;&lt;a href=events&gt;Schedule&lt;/a&gt;&lt;li&gt;&lt;a href=seminars&gt;Seminars&lt;/a&gt;&lt;/ul&gt;&lt;/div&gt;&lt;li&gt;&lt;a href=contact&gt;Contact Us&lt;/a&gt;&lt;li&gt;&lt;a href=subscribe&gt;Get Involved&lt;/a&gt;&lt;/ul&gt;&lt;div class=&quot;uk-navbar-right uk-hidden@s&quot;&gt;&lt;a href=# class=&quot;uk-icon uk-navbar-toggle uk-navbar-toggle-icon&quot;id=toggle-sidebar-item uk-navbar-toggle-icon=&quot;&quot;uk-toggle=&quot;target: #offcanvas-navbar&quot;&gt;&lt;svg height=20 ratio=1 viewBox=&quot;0 0 20 20&quot;width=20 xmlns=http://www.w3.org/2000/svg&gt;&lt;rect height=2 width=20 y=9&gt;&lt;/rect&gt;&lt;rect height=2 width=20 y=3&gt;&lt;/rect&gt;&lt;rect height=2 width=20 y=15&gt;&lt;/rect&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/nav&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;uk-section uk-section-secondary&quot;role=main&gt;&lt;div class=uk-container&gt;&lt;h3&gt;Who are we?&lt;/h3&gt;&lt;p&gt;A club and community for students with a passion for computer science.&lt;h3&gt;Interested in getting involved?&lt;/h3&gt;&lt;p&gt;Click the links above!&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;uk-light uk-section uk-section-primary&quot;&gt;&lt;div class=uk-container&gt;&lt;div class=&quot;uk-child-width-1-2@s uk-child-width-1-3@m&quot;uk-grid&gt;&lt;div&gt;&lt;h3&gt;ACM &lt;span class=&quot;fa fa-fw fa-pulse fa-star&quot;&gt;&lt;/span&gt; CSUF&lt;/h3&gt;&lt;p&gt;Association of Computing Machinery&lt;br&gt;California State University, Fullerton&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Find us on Social Media&lt;/h3&gt;&lt;p&gt;&lt;a href=https://www.twitter.com/acmcsuf class=&quot;uk-margin-small-right uk-icon-button&quot;aria-label=&quot;twitter link&quot;target=_blank title=@acmcsuf uk-icon=&quot;icon: twitter&quot;uk-tooltip=&quot;pos: bottom&quot;&gt;&lt;/a&gt; &lt;a href=https://www.facebook.com/groups/acmcsuf class=&quot;uk-margin-small-right uk-icon-button&quot;aria-label=&quot;facebook group link&quot;target=_blank title=/group/acmcsuf uk-icon=&quot;icon: facebook&quot;uk-tooltip=&quot;pos: top&quot;&gt;&lt;/a&gt; &lt;a href=https://www.instagram.com/acmcsuf class=&quot;uk-margin-small-right uk-icon-button&quot;aria-label=&quot;instagram link&quot;target=_blank title=@acmcsuf uk-icon=&quot;icon: instagram&quot;uk-tooltip=&quot;pos: right&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;h3&gt;Meetings&lt;/h3&gt;&lt;p&gt;ICPC Practice @ CS101 starting 9/22/17&lt;br&gt;&lt;span class=uk-margin-small-right uk-icon=&quot;icon: git-fork&quot;&gt;&lt;/span&gt;Bi-weekly Fridays 4-6pm&lt;p&gt;Project Jams @ CS300 starting 9/29/17&lt;br&gt;&lt;span class=uk-margin-small-right uk-icon=&quot;icon: git-branch&quot;&gt;&lt;/span&gt;Bi-weekly Fridays 4-8pm&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</find>
+      <find>jquery</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -154,12 +145,13 @@
         <option value="$PROJECT_DIR$/static/js/Fall2017List.js" />
         <option value="$PROJECT_DIR$/static/js/SeminarsList.js" />
         <option value="$PROJECT_DIR$/about.html" />
-        <option value="$PROJECT_DIR$/board.html" />
-        <option value="$PROJECT_DIR$/contact.php" />
         <option value="$PROJECT_DIR$/events.html" />
+        <option value="$PROJECT_DIR$/static/js/Spring2018List.js" />
+        <option value="$PROJECT_DIR$/board.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/seminars.html" />
         <option value="$PROJECT_DIR$/subscribe.html" />
+        <option value="$PROJECT_DIR$/contact.php" />
       </list>
     </option>
   </component>
@@ -284,12 +276,12 @@
       <workItem from="1517343777083" duration="340000" />
       <workItem from="1517349932247" duration="2525000" />
       <workItem from="1518145163501" duration="730000" />
-      <workItem from="1519241241768" duration="1858000" />
+      <workItem from="1519241241768" duration="2203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5453000" />
+    <option name="totallyTimeSpent" value="5798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="42" width="1400" height="838" extended-state="0" />
@@ -444,20 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6539" lean-forward="false" selection-start-line="0" selection-start-column="6539" selection-end-line="0" selection-end-column="6539" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#center#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#center#0;n#div#1;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#center#0;n#div#2;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#center#0;n#div#3;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -468,10 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.php">
+    <entry file="file://$PROJECT_DIR$/static/js/Spring2018List.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="2336" lean-forward="false" selection-start-line="41" selection-start-column="2336" selection-end-line="41" selection-end-column="2336" />
+        <state relative-caret-position="0">
+          <caret line="0" column="2106" lean-forward="false" selection-start-line="0" selection-start-column="2106" selection-end-line="0" selection-end-column="2106" />
           <folding />
         </state>
       </provider>
@@ -479,7 +457,7 @@
     <entry file="file://$PROJECT_DIR$/board.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5377" lean-forward="false" selection-start-line="0" selection-start-column="5377" selection-end-line="0" selection-end-column="5377" />
+          <caret line="0" column="595" lean-forward="false" selection-start-line="0" selection-start-column="595" selection-end-line="0" selection-end-column="595" />
           <folding>
             <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -489,7 +467,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5570" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5682" />
+          <caret line="0" column="598" lean-forward="false" selection-start-line="0" selection-start-column="598" selection-end-line="0" selection-end-column="598" />
           <folding>
             <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
@@ -501,7 +479,7 @@
     <entry file="file://$PROJECT_DIR$/seminars.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="4828" lean-forward="false" selection-start-line="0" selection-start-column="4828" selection-end-line="0" selection-end-column="4828" />
+          <caret line="0" column="598" lean-forward="false" selection-start-line="0" selection-start-column="598" selection-end-line="0" selection-end-column="598" />
           <folding>
             <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -511,12 +489,34 @@
     <entry file="file://$PROJECT_DIR$/subscribe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5989" lean-forward="false" selection-start-line="0" selection-start-column="5989" selection-end-line="0" selection-end-column="5989" />
+          <caret line="0" column="599" lean-forward="false" selection-start-line="0" selection-start-column="599" selection-end-line="0" selection-end-column="599" />
           <folding>
             <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#fieldset#0;n#form#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="612" lean-forward="false" selection-start-line="0" selection-start-column="612" selection-end-line="0" selection-end-column="612" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6539" lean-forward="false" selection-start-line="0" selection-start-column="6539" selection-end-line="0" selection-end-column="6539" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#center#0;n#div#0;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#center#0;n#div#1;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#center#0;n#div#2;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#center#0;n#div#3;n#div#0;n#div#0;n#div#2;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
