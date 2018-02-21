@@ -1,7 +1,7 @@
 const Spring2018List = [
   {
     id: 1,
-    image:'charles.png',
+    image:'charles.jpg',
     name:'Charles Bucher',
     title:'President',
     description:'Management of established programs, resources, and creation of future programs',
