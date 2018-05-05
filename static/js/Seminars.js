@@ -35,7 +35,7 @@ const Seminar = ({room, title = null, date_time, presenter, description = null})
 */
 const SeminarList = ({seminars}) => {
   return (
-    <div className="uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center" uk-grid="">
+    <div className="uk-child-width-1-1@s uk-margin-large-left uk-margin-large-right uk-text-center" uk-grid="">
           {
               seminars.map((user, i) => {
               return (
