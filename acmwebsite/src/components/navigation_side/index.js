@@ -13,7 +13,7 @@ const NavigationSide = ({name}) => {
                             <li className={name === "seminars" ? "uk-active" : ""}><Link to='/seminars'>Seminars</Link></li>
                         </ul>
                 </li>
-                <li className={name === "contact" ? "uk-active" : ""}><a href='/contact'>Contact Us</a></li>
+                <li className={name === "contact" ? "uk-active" : ""}><Link href='/contact'>Contact Us</Link></li>
                 <li className={name === "subscribe" ? "uk-active" : ""}><Link to='/subscribe'>Get Involved</Link></li>
             </ul>
         </div>

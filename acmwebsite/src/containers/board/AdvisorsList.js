@@ -20,4 +20,5 @@ export const AdvisorsList = [{
     name: "Yun Tian",
     title: "Professor",
     email: "ytian@fullerton.edu"
-}];
+}
+];

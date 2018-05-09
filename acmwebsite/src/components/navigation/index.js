@@ -1,6 +1,8 @@
 import React from 'react';
 import * as Scroll from "react-scroll";
 import Link from "react-router-dom/es/Link";
+import ACM_LOGO from '../../media/acm-desktopcta.png';
+import ACM_HOVER_LOGO from'../../media/acm-desktopctahover.png';
 
 
 const Navigation = ({name}) => {
@@ -8,16 +10,16 @@ const Navigation = ({name}) => {
                 uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top:0">
         <div className='uk-navbar-left'>
             <div className="uk-inline-clip uk-margin-left uk-transition-toggle" tabIndex="">
-                <img alt="home link logo" height={50} src='http://acm.ecs.fullerton.edu/img/acm-desktopcta.png' width={50} />
+                <img alt="home link logo" height={50} src={ACM_LOGO} width={50} />
                 <Link to='/' onClick={Scroll.animateScroll.scrollToTop()}>
-                    <img alt="hover home link logo" height={50} src='http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png' width={50} className="uk-position-cover uk-transition-fade"/>
+                    <img alt="hover home link logo" height={50} src={ACM_HOVER_LOGO} width={50} className="uk-position-cover uk-transition-fade"/>
                 </Link>
             </div>
         </div>
         <div className='uk-navbar-right'>
             <ul className="uk-navbar-nav uk-visible@s">
                 <li className={name === "about" ? "uk-active" : ""}><Link to="/about" className="uk-button uk-button-text" onClick={Scroll.animateScroll.scrollToTop()}>About Us</Link></li>
-                <li className={name === "board" ? "uk-active" : ""}><Link to="/board" className="uk-button uk-button-text" onClick={Scroll.animateScroll.scrollToTop()}>Board</Link></li>
+                <li className={name === "board" ? "uk-active" : ""}><Link to="/board" className="uk-button uk-button-text" onClick={Scroll.animateScroll.scrollToTop()}>The Board</Link></li>
                 <li className={name === "events" ? "uk-active" : ""}><a href="/events" className="uk-button uk-button-text">Events</a>
                     <div className='uk-navbar-dropdown'>
                         <ul className="uk-nav uk-navbar-dropdown-nav">
@@ -26,7 +28,7 @@ const Navigation = ({name}) => {
                         </ul>
                     </div>
                 </li>
-                <li className={name === "contact" ? "uk-active" : ""}><a href="/contact" className="uk-button uk-button-text">Contact Us</a></li>
+                <li className={name === "contact" ? "uk-active" : ""}><Link to="/contact" className="uk-button uk-button-text">Contact Us</Link></li>
                 <li className={name === "subscribe" ? "uk-active" : ""}><Link to="/subscribe" className="uk-button uk-button-text" onClick={Scroll.animateScroll.scrollToTop()}>Get Involved</Link></li>
             </ul>
             <div className="uk-navbar-right uk-hidden@s"><a className='uk-navbar-toggle' uk-navbar-toggle-icon=""

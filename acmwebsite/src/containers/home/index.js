@@ -10,6 +10,8 @@ import NavigationSide from "../../components/navigation_side";
 import Footer from "../../components/footer";
 import Link from "react-router-dom/es/Link";
 import * as Scroll from "react-scroll/modules/index";
+import ACM_LOGO from '../../media/acm-desktopcta.png';
+import ACM_HOVER_LOGO from'../../media/acm-desktopctahover.png';
 
 const Home = () => {
     return (
@@ -51,16 +53,10 @@ const Home = () => {
                     <nav className="uk-navbar-container uk-navbar-transparent" uk-navbar="">
                         <div className='uk-navbar-left'>
                             <div className="uk-inline-clip uk-margin-left uk-transition-toggle" tabIndex="">
-                                <img alt="home link logo" height={50} src='http://acm.ecs.fullerton.edu/img/acm-desktopcta.png' width={50} />
-                                    <Link to='/' onClick={Scroll.animateScroll.scrollToTop()}>
-                                        <img
-                                            alt="hover home link logo"
-                                            height={50}
-                                            src='http://acm.ecs.fullerton.edu/img/acm-desktopctahover.png'
-                                            width={50}
-                                            className="uk-position-cover uk-transition-fade"
-                                        />
-                                    </Link>
+                                <img alt="home link logo" height={50} src={ACM_LOGO} width={50} />
+                                <Link to='/' onClick={Scroll.animateScroll.scrollToTop()}>
+                                    <img alt="hover home link logo" height={50} src={ACM_HOVER_LOGO} width={50} className="uk-position-cover uk-transition-fade"/>
+                                </Link>
                             </div>
                         </div>
                         <div className='uk-navbar-right'>
@@ -78,15 +74,15 @@ const Home = () => {
                                     fontSize:'13px'
                                 }} to='board' onClick={Scroll.animateScroll.scrollToTop()}>The Board</Link></li>
                                 <li>
-                                    <Link style={{
+                                    <a style={{
                                         position:'relative',
                                         color:'#fff',
                                         height:'70px',
                                         fontSize:'13px'
-                                    }} to='events' onClick={Scroll.animateScroll.scrollToTop()} aria-expanded='false'>Events</Link>
+                                    }} href='events' onClick={Scroll.animateScroll.scrollToTop()} aria-expanded='false'>Events</a>
                                     <div className="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" style={{left:'1462.11px',top:'80px'}}>
                                     <ul className="uk-nav uk-navbar-dropdown-nav">
-                                        <li><Link to='events' onClick={Scroll.animateScroll.scrollToTop()}>Schedule</Link></li>
+                                        <li><a href='events' onClick={Scroll.animateScroll.scrollToTop()}>Schedule</a></li>
                                         <li><Link to='seminars' onClick={Scroll.animateScroll.scrollToTop()}>Seminars</Link></li>
                                     </ul>
                                 </div>

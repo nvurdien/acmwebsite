@@ -19,12 +19,12 @@ const Board = () => {
             <h1 className="uk-heading-line uk-heading-primary uk-text-center"><span>Board</span></h1>
             <ul className="uk-flex-center uk-flex uk-subnav uk-subnav-pill"
                 uk-switcher="animation: uk-animation-scale-up; swiping:true;">
-                <li><a href='#spring'>Spring 2018</a></li>
-                <li><a href='#fall'>Fall 2017</a></li>
+                <li><a href='#spring2018-members'>Spring 2018</a></li>
+                <li><a href='#fall2017-members'>Fall 2017</a></li>
             </ul>
             <ul className="uk-margin-small-right uk-margin-small-left uk-switcher">
-                <li id='spring2018-members'><CardList members={Fall2017List}/></li>
-                <li id='fall2017-members'><CardList members={Spring2018List}/></li>
+                <li id='spring2018-members'><CardList members={Spring2018List}/></li>
+                <li id='fall2017-members'><CardList members={Fall2017List}/></li>
             </ul>
         </div>
         <div className="uk-section uk-section-default">
