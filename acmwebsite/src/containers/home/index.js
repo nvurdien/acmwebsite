@@ -87,12 +87,12 @@ const Home = () => {
                                     </ul>
                                 </div>
                                 </li>
-                                <li><a style={{
+                                <li><Link style={{
                                     position:'relative',
                                     color:'#fff',
                                     height:'70px',
                                     fontSize:'13px'
-                                }} href='contact'>Contact Us</a></li>
+                                }} to='contact'>Contact Us</Link></li>
                                 <li><Link style={{
                                     position:'relative',
                                     color:'#fff',
