@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import '../../style.css';
 import './style.css';
-import 'font-awesome/css/font-awesome.min.css';
 import HomeImage from '../../media/4696338852_bde479b169_o.jpg'
 import NavigationSide from "../../components/navigation_side";
 import Footer from "../../components/footer";

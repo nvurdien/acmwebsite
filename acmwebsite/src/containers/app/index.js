@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import '../../uikit.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import Home from '../home'
 import About from '../about'
 import Board from '../board'
