@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "react-router-dom/es/Link";
 
-const NavigationSide = ({name}) => {
+export default ({name}) => {
     return <div id='offcanvas-navbar' uk-offcanvas="mode: reveal; flip: true;">
         <div className='uk-offcanvas-bar'>
             <ul className="uk-nav uk-nav-default">
@@ -19,5 +19,3 @@ const NavigationSide = ({name}) => {
         </div>
     </div>
 }
-
-export default NavigationSide;

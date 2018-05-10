@@ -33,14 +33,16 @@ const Seminar = ({room, title = null, date_time, presenter, description = null})
  * @param members * an array must include [room, title, date_time, presenter, description]
  *
  */
-const SeminarCards = ({seminars}) => {
+export default ({seminars}) => {
+    let count = 0;
     return (
             <div className="uk-child-width-1-1@s uk-margin-large-left uk-margin-large-right uk-text-center" uk-grid="">
                 {
                     seminars.map((user, i) => {
+                        count += 1;
                         return (
                             <Seminar
-                                key={seminars[i].id}
+                                key={count}
                                 room={seminars[i].room}
                                 title={seminars[i].title}
                                 date_time={seminars[i].date_time}
@@ -53,6 +55,3 @@ const SeminarCards = ({seminars}) => {
             </div>
         )
 };
-
-
-export default SeminarCards;

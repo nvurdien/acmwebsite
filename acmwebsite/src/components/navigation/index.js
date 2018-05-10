@@ -5,7 +5,7 @@ import ACM_LOGO from '../../media/acm-desktopcta.png';
 import ACM_HOVER_LOGO from'../../media/acm-desktopctahover.png';
 
 
-const Navigation = ({name}) => {
+export default ({name}) => {
     return <nav className="uk-navbar-container uk-navbar-primary" uk-navbar=""
                 uk-sticky="show-on-up: true; animation: uk-animation-slide-top; top:0">
         <div className='uk-navbar-left'>
@@ -36,5 +36,3 @@ const Navigation = ({name}) => {
         </div>
     </nav>
 };
-
-export default Navigation

@@ -9,7 +9,7 @@ import NavieImage from '../../media/1274.jpeg';
 import ChrisImage from '../../media/chris.jpg';
 import RoyImage from '../../media/roy.jpg';
 
-export const Fall2017List = [{
+export default [{
     id: 1,
     image: CharlesImage,
     name: "Charles Bucher",

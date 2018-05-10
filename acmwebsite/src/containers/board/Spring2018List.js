@@ -9,7 +9,7 @@ import NavieImage from '../../media/1274.jpeg';
 import RoyImage from '../../media/roy.jpg';
 
 
-export const Spring2018List = [{
+export default [{
     id: 1,
     image: CharlesImage,
     name: "Charles Bucher",

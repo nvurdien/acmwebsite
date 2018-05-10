@@ -49,7 +49,7 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
  * @param members * an array must include [id, image, name, title, description, email]
  *
  */
-const CardList = ({members}) => {
+export default ({members}) => {
     return (
         <div className="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-small" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; repeat: true" uk-grid="">
             {
@@ -70,5 +70,3 @@ const CardList = ({members}) => {
         </div>
     )
 };
-
-export default CardList;

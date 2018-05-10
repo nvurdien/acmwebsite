@@ -1,6 +1,7 @@
 import React from 'react';
+import meetings from './meetings'
 
-const Footer = () => {
+export default () => {
     return <div className="uk-section uk-section-primary">
         <div className='uk-container'>
             <div className="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="">
@@ -17,18 +18,22 @@ const Footer = () => {
                 </div>
                 <div>
                     <h3>Meetings</h3>
-                    <p>ICPC Practice @ CS101 starting 9/22/17<br/>
-                        <span className='uk-margin-small-right' uk-icon="icon: git-fork"/>
-                        Bi-weekly Fridays 4-6pm
-                    </p>
-                    <p>Project Jams @ CS300 starting 9/29/17<br/>
-                        <span className='uk-margin-small-right' uk-icon="icon: git-branch"/>
-                        Bi-weekly Fridays 4-8pm
-                    </p>
+                    {
+                        meetings.map((meeting, i) => {
+                            return (
+                                <p key={meetings[i].id}>
+                                    {meetings[i].name}
+                                    {(meetings[i].room ? ` @ ${meetings[i].room}` : '')}
+                                    {(meetings[i].start_date ? ` starting ${meetings[i].start_date}` : '')}
+                                    <br/>
+                                    <span className='uk-margin-small-right' uk-icon={(meetings[i].icon ? meetings[i].icon : '')}/>
+                                    {meetings[i].times}
+                                </p>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>
     </div>
 };
-
-export default Footer;

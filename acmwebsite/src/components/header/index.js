@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({image, heading, subtext, imagePosition}) => {
+export default ({image, heading, subtext, imagePosition}) => {
     return <div
         className="uk-flex-center uk-background-blend-multiply uk-background-cover uk-background-primary uk-flex uk-flex-middle uk-height-medium uk-light uk-overflow-hidden"
         style={{backgroundImage:`url(${image})`, backgroundPosition:imagePosition}}>
@@ -11,5 +11,3 @@ const Header = ({image, heading, subtext, imagePosition}) => {
     </div>
 </div>
 };
-
-export default Header;

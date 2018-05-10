@@ -29,7 +29,7 @@ const Advisor = ({image, name, title, email, color}) => {
  * @param members * an array must include [id, image, name, title, email]
  *
  */
-const AdvisorList = ({advisors}) => {
+export default ({advisors}) => {
     return (
         <div className="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center" uk-grid="">
             {
@@ -48,5 +48,3 @@ const AdvisorList = ({advisors}) => {
         </div>
     )
 };
-
-export default AdvisorList;

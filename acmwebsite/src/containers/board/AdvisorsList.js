@@ -2,7 +2,12 @@ import BethImage from '../../media/KvQzjVeA_400x400.png';
 import AnandImage from '../../media/PanangadanAnand99.jpg';
 import YunImage from '../../media/yun_tian.jpg';
 
-export const AdvisorsList = [{
+// id's divisible by the following:
+// divisible by 3 is blue
+// divisible by 2 is black
+// other is white
+
+export default [{
     id: 1,
     image: BethImage,
     name: "Beth Harnick-Shapiro",
