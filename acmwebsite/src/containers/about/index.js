@@ -5,6 +5,7 @@ import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 import '../../style.css';
 import HeaderImage from '../../media/20170825_171902.jpg';
+import Link from "react-router-dom/es/Link";
 
 const About = () => {
     return <div>
@@ -21,8 +22,8 @@ const About = () => {
                 </p>
                 <h3>What about us?</h3>
                 <p>
-                    We love to offer both leadership and skill building projects. If you are interested in a board position please <a href='/contact' className='uk-link-muted'>contact us</a>. As for skills, if you are interested in starting a workshop or learning a particular
-                    skill please <a href='/contact' className='uk-link-muted'>contact us</a>!
+                    We love to offer both leadership and skill building projects. If you are interested in a board position please <Link to='/contact' className='uk-link-muted'>contact us</Link>. As for skills, if you are interested in starting a workshop or learning a particular
+                    skill please <Link to='/contact' className='uk-link-muted'>contact us</Link>!
                 </p>
                 <h3>What we Offer</h3>
                 <p>
@@ -57,7 +58,7 @@ const About = () => {
         </center>
     </div>
 </div>
-                <p>Let us know <a href='/contact' className='uk-link-muted'>here</a> if you have an idea for a project or workshop, so we can start planning right away!</p>
+                <p>Let us know <Link to='/contact' className='uk-link-muted'>here</Link> if you have an idea for a project or workshop, so we can start planning right away!</p>
             </div>
 </div>
         <Footer/>

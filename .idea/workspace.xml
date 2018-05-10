@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3189f2c7-7e90-476d-9759-b9986c4a171c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acmwebsite/src/containers/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/acmwebsite/src/containers/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acmwebsite/src/containers/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/acmwebsite/src/containers/home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acmwebsite/src/containers/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/acmwebsite/src/containers/about/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +25,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acmwebsite/src/containers/app/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/acmwebsite/src/containers/about/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="24" column="134" lean-forward="true" selection-start-line="24" selection-start-column="134" selection-end-line="24" selection-end-column="134" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,7 +119,6 @@
         <option value="$PROJECT_DIR$/acmwebsite/src/containers/subscribe/index.js" />
         <option value="$PROJECT_DIR$/acmwebsite/src/containers/board/Spring2018List.js" />
         <option value="$PROJECT_DIR$/acmwebsite/src/containers/board/index.js" />
-        <option value="$PROJECT_DIR$/acmwebsite/src/containers/about/index.js" />
         <option value="$PROJECT_DIR$/acmwebsite/src/containers/board/AdvisorsList.js" />
         <option value="$PROJECT_DIR$/acmwebsite/src/index.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
@@ -119,6 +128,7 @@
         <option value="$PROJECT_DIR$/acmwebsite/src/components/navigation_side/index.js" />
         <option value="$PROJECT_DIR$/acmwebsite/src/containers/home/index.js" />
         <option value="$PROJECT_DIR$/acmwebsite/src/containers/app/index.js" />
+        <option value="$PROJECT_DIR$/acmwebsite/src/containers/about/index.js" />
       </list>
     </option>
   </component>
@@ -199,7 +209,7 @@
               <item name="acmwebsite" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="acmwebsite" type="b2602c69:ProjectViewProjectNode" />
@@ -280,12 +290,12 @@
       <workItem from="1525398587085" duration="30280000" />
       <workItem from="1525569894746" duration="1116000" />
       <workItem from="1525844920061" duration="5455000" />
-      <workItem from="1525923534026" duration="63000" />
+      <workItem from="1525923534026" duration="209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44225000" />
+    <option name="totallyTimeSpent" value="44371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="22" width="1400" height="838" extended-state="0" />
@@ -481,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acmwebsite/src/containers/about/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/acmwebsite/src/containers/board/AdvisorsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -520,6 +523,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -600,6 +606,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/acmwebsite/src/containers/about/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="24" column="134" lean-forward="true" selection-start-line="24" selection-start-column="134" selection-end-line="24" selection-end-column="134" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
