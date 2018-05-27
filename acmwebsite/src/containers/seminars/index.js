@@ -4,7 +4,7 @@ import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 import SeminarCards from "../../components/seminar_cards";
-import SeminarsList from "./SeminarsList";
+import SeminarsList from "../../lists/SeminarsList";
 
 const Seminars = () => {
     return <div>

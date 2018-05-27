@@ -1,8 +1,19 @@
-export default [
-
-
+let SeminarsList = [
     {
-    id: 3,
+        room: "CS-500",
+        // title: null,
+        date_time: "October 10, 2017",
+        presenter: "Sharma Rishabh",
+        // description: null
+    },
+    {
+        room: "CS-500",
+        // title: null,
+        date_time: "February 6, 2018 12:00PM – 1:00PM",
+        presenter: "William McCarthy",
+        // description: null
+    },
+    {
     room: "CS-506",
     title: "The EIFFEL Programming Language/IDE",
     date_time: "Tuesday, April 10, 12:00PM – 1:00PM",
@@ -19,20 +30,14 @@ export default [
     "improving the quality of software programs, and demonstrate the use of the EiffelStudio in creating quality " +
     "Object Oriented software on multiple platforms (OSX, Linux, and Windows)"
     },
-    {
-    id: 2,
-    room: "CS-500",
-    // title: null,
-    date_time: "February 6, 2018 12:00PM – 1:00PM",
-    presenter: "William McCarthy",
-    // description: null
-    },
-    {
-    id: 1,
-    room: "CS-500",
-    // title: null,
-    date_time: "October 10, 2017",
-    presenter: "Sharma Rishabh",
-    // description: null
-    }
+
+    //add more here!
+
 ];
+let count = SeminarsList.length;
+SeminarsList.map((seminar, id) => {
+    SeminarsList[id].id = count;
+    count--;
+});
+
+export default SeminarsList.reverse();

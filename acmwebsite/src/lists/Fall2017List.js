@@ -1,13 +1,13 @@
-import CharlesImage from '../../media/charles.jpg';
-import OscarImage from '../../media/20170914_132704.jpg';
-import TommyImage from '../../media/15844524_1297254926998904_763713103847688498_o.jpg';
-import EricImage from '../../media/20170825_172230.jpg';
-import JulianImage from '../../media/20170825_172118.jpg';
-import DipenImage from '../../media/dipen.jpg';
-import WilliamImage from '../../media/william.jpg';
-import NavieImage from '../../media/1274.jpeg';
-import ChrisImage from '../../media/chris.jpg';
-import RoyImage from '../../media/roy.jpg';
+import CharlesImage from '../media/charles.jpg';
+import OscarImage from '../media/20170914_132704.jpg';
+import TommyImage from '../media/15844524_1297254926998904_763713103847688498_o.jpg';
+import EricImage from '../media/20170825_172230.jpg';
+import JulianImage from '../media/20170825_172118.jpg';
+import DipenImage from '../media/dipen.jpg';
+import WilliamImage from '../media/william.jpg';
+import NavieImage from '../media/1274.jpeg';
+import ChrisImage from '../media/chris.jpg';
+import RoyImage from '../media/roy.jpg';
 
 export default [{
     id: 1,

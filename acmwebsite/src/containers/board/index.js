@@ -6,9 +6,9 @@ import Footer from "../../components/footer";
 import AdvisorList from "../../components/advisor_cards";
 import CardList from "../../components/student_cards";
 import BoardImage from '../../media/20170825_171844.jpg';
-import Fall2017List from './Fall2017List';
-import Spring2018List from './Spring2018List';
-import AdvisorsList from "./AdvisorsList";
+import Fall2017List from '../../lists/Fall2017List';
+import Spring2018List from '../../lists/Spring2018List';
+import AdvisorsList from "../../lists/AdvisorsList";
 
 const Board = () => {
     return <div>
