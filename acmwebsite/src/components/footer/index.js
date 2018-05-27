@@ -1,5 +1,5 @@
 import React from 'react';
-import meetings from './meetings'
+import meetings from '../../lists/meetings'
 
 export default () => {
     return <div className="uk-section uk-section-primary">
