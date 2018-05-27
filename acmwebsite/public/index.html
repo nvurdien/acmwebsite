@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="js no-touch" style="">
+<html lang="en" class="js no-touch">
   <head>
     <meta charset="utf-8" />
     <!--When bookmarked on Apple Devices will use icon image-->
@@ -39,7 +39,17 @@
     <script src='./fullcalendar.min.js'></script>
     <script src='./gcal.min.js'></script>
     <script>
-        $(document).ready(function(){$("#calendar").fullCalendar({header:{left:"title",center:"agendaDay,agendaWeek,month",right:"prev,next today"},displayEventTime:!1,googleCalendarApiKey:"AIzaSyCwhfMkXl4-iaXUXfP8cBc1LEG3DESnky0",eventSources:[{googleCalendarId:"jo7mgmudv8uibuffbqtdk1isgc@group.calendar.google.com"},{googleCalendarId:"hs6bk4b2nb2dvshs787timb7fo@group.calendar.google.com",className:"nice-event"}],eventClick:function(e){return window.open(e.url,"gcalevent","width=700,height=600"),!1}})})
+        $(document).ready(function(){$("#calendar").fullCalendar({header:{left:"title",center:"list,month",right:"prev,next today"},views: {
+                list: {
+                    duration: { days: 90 },
+                    listDayAltFormat: 'dddd',
+                    title: "hello"
+                }
+            },defaultView:"list",displayEventTime:!1,googleCalendarApiKey:"AIzaSyCwhfMkXl4-iaXUXfP8cBc1LEG3DESnky0",eventSources:[{googleCalendarId:"jo7mgmudv8uibuffbqtdk1isgc@group.calendar.google.com"},{googleCalendarId:"hs6bk4b2nb2dvshs787timb7fo@group.calendar.google.com",className:"nice-event"}],eventClick:function(e){return window.open(e.url,"gcalevent","width=700,height=600"),!1},
+            viewRender: function(view) {
+                if (view.type !== 'month')
+                $(".fc-left").html("<h2>Upcoming Events</h2>");
+            }})})
     </script>
   </body>
 </html>
