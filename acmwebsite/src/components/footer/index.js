@@ -14,6 +14,7 @@ export default () => {
                         <a href='https://www.twitter.com/acmcsuf' className="uk-margin-small-right uk-icon-button" aria-label="twitter link" target='_blank' rel="noopener noreferrer"  title='@acmcsuf' uk-icon="icon: twitter" uk-tooltip="pos: bottom"/>
                         <a href='https://www.facebook.com/groups/acmcsuf' className="uk-margin-small-right uk-icon-button" aria-label="facebook group link" rel="noopener noreferrer"  target='_blank' title='/group/acmcsuf' uk-icon="icon: facebook" uk-tooltip="pos: top"/>
                         <a href='https://www.instagram.com/acmcsuf' className="uk-margin-small-right uk-icon-button" aria-label="instagram link" target='_blank' rel="noopener noreferrer"  title='@acmcsuf' uk-icon="icon: instagram" uk-tooltip="pos: right"/>
+                        <a href='#' className="uk-margin-small-right uk-icon-button" aria-label="slack link" target='_blank' rel="noopener noreferrer" style={{textDecoration:"none"}}  title='@acmcsuf' uk-tooltip="pos: right"><i className='fa fa-slack'></i></a>
                     </p>
                 </div>
                 <div>
