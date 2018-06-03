@@ -8,6 +8,18 @@ let SeminarsList = [
     },
     {
         room: "CS-506",
+        title: "Ray Tracing",
+        date_time: "October 31, 2017 (12:00PM to 1:00PM)",
+        presenter: "Ruth Obidah",
+        description: "We all love a great feel good animated movie. From our old Disney cartoons to Moana, animation \
+        technology has had a rich history of phenomenal advancements. One of such advancements is Ray tracing. Ray tracing \
+        is a graphics rendering technique for generating images by tracing the path of light as pixels in an image plane and \
+        simulating the effects of the path of light with virtual objects. Ray tracing is known for its ability to produce a \
+        high degree of visual realism and has been adopted in recent Pixar animated movies such as \"Monsters Inc.\" and \
+        \"Moana\". We will explore the making of a simple ray tracer that explains the nuts and bolts of how ray tracing works"
+    },
+    {
+        room: "CS-506",
         title: "The EIFFEL Programming Language/IDE",
         date_time: "April 10, 2018 (12:00PM – 1:00PM)",
         presenter: "Dr. William McCarthy",
