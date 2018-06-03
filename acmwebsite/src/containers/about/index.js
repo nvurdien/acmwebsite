@@ -4,7 +4,7 @@ import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 import '../../style.css';
-import HeaderImage from '../../media/20170825_171902.jpg';
+import HeaderImage from '../../media/blank.jpg';
 import Link from "react-router-dom/es/Link";
 
 const About = () => {
@@ -36,29 +36,29 @@ const About = () => {
                      uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 500; repeat: true">
                     <div id='projects'>
                         <center>
-                            <i className="fa fa-3x fa-gift" style={{color: '#303030'}}/>
+                            <i className="fa fa-3x fa-files-o" style={{color: '#303030'}}/>
                             <h2>Projects</h2>
                         </center>
                     </div>
                     <div id='workshops'>
                         <center>
-                            <i className="fa fa-3x fa-home" style={{color: '#303030'}}/>
+                            <i className="fa fa-3x fa-users" style={{color: '#303030'}}/>
                             <h2>Workshops</h2>
                         </center>
                     </div>
                     <div id='icpc'>
                         <center>
-                            <i className="fa fa-3x fa-trophy" style={{color: '#303030'}}/>
+                            <i className="fa fa-3x fa-file-code-o" style={{color: '#303030'}}/>
                             <h2>ICPC Practice</h2>
                         </center>
                     </div>
         <div id='hackathons'>
-            <center><i className="fa fa-3x fa-code" style={{color: '#303030'}}/>
+            <center><i className="fa fa-3x fa-trophy" style={{color: '#303030'}}/>
             <h2>Hackathons</h2>
         </center>
     </div>
 </div>
-                <p>Let us know <Link to='/contact' className='uk-link-muted'>here</Link> if you have an idea for a project or workshop, so we can start planning right away!</p>
+                <p><Link to='/contact' className='uk-link-muted'>Contact us</Link> if you have an idea for a project or workshop, so we can start planning right away!</p>
             </div>
 </div>
         <Footer/>

@@ -3,7 +3,7 @@ import NavigationSide from "../../components/navigation_side";
 import Header from "../../components/header";
 import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
-import SubscribeImage from '../../media/subscribe.JPG';
+import SubscribeImage from '../../media/blank.jpg';
 import MailingList from '../../components/mailingList';
 
 const Subscribe = () => {

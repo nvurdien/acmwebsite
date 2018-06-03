@@ -5,7 +5,7 @@ import Navigation from "../../components/navigation";
 import Footer from "../../components/footer";
 import AdvisorList from "../../components/advisor_cards";
 import CardList from "../../components/student_cards";
-import BoardImage from '../../media/20170825_171844.jpg';
+import BoardImage from '../../media/blank.jpg';
 import Fall2017List from '../../lists/Fall2018List';
 import Spring2018List from '../../lists/Spring2018List';
 import AdvisorsList from "../../lists/AdvisorsList";

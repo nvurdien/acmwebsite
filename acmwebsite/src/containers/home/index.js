@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import '../../style.css';
 import './style.css';
-import HomeImage from '../../media/4696338852_bde479b169_o.jpg'
+import HomeImage from '../../media/homepage.jpg'
 import NavigationSide from "../../components/navigation_side";
 import Footer from "../../components/footer";
 import Link from "react-router-dom/es/Link";
