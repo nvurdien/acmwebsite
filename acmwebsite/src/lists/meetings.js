@@ -1,18 +1,18 @@
 export default [
     {
         id: 1,
-        name: 'ICPC Practice',
-        room: 'CS101',
-        start_date: '9/22/17',
+        name: 'Coding Practice',
+        room: '<room_number>',
+        start_date: '<start_date>',
         icon: 'git-fork',
-        times: 'Bi-weekly Fridays 4-6pm'
+        times: '<times>'
     },
     {
         id : 2,
         name: 'Project Jams',
-        room: 'CS300',
-        start_date: '9/29/17',
+        room: '<room_number>',
+        start_date: '<start_date>',
         icon: 'git-branch',
-        times: 'Bi-weekly Fridays 4-8pm'
+        times: '<times>'
     }
 ]

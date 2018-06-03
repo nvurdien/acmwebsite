@@ -1,6 +1,6 @@
-import BethImage from '../media/KvQzjVeA_400x400.png';
-import AnandImage from '../media/PanangadanAnand99.jpg';
-import YunImage from '../media/yun_tian.jpg';
+import BethImage from '../media/beth.png';
+import AnandImage from '../media/anand.jpg';
+import YunImage from '../media/yun.jpg';
 
 // id's divisible by the following:
 // divisible by 3 is blue
