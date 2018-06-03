@@ -1,11 +1,11 @@
 import CharlesImage from '../media/charles.jpg';
-import OscarImage from '../media/20170914_132704.jpg';
-import TommyImage from '../media/15844524_1297254926998904_763713103847688498_o.jpg';
+import OscarImage from '../media/oscar.jpg';
+import TommyImage from '../media/tommy.jpg';
 import HuyImage from '../media/huy.jpg';
-import JulianImage from '../media/20170825_172118.jpg';
+import JulianImage from '../media/julian.jpg';
 import DipenImage from '../media/dipen.jpg';
 import WilliamImage from '../media/william.jpg';
-import NavieImage from '../media/1274.jpeg';
+import NavieImage from '../media/navie.jpeg';
 import RoyImage from '../media/roy.jpg';
 
 
