@@ -11,9 +11,11 @@ import React from 'react';
  * @param email
  * @param null github
  * @param null linkedin
+ * @param null twitter
+ * @param null discord
  *
  */
-const Card = ({image, name, title, description, email, github = null, linkedin = null}) => {
+const Card = ({image, name, title, description, email, github = null, linkedin = null, twitter = null, discord = null}) => {
     return (
         <div>
             <div className="uk-card uk-card-default uk-card-hover uk-animation-toggle">
@@ -34,8 +36,10 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
                 </div>
                 <div className="uk-card-footer">
                     <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right uk-animation-scale-up" uk-icon="icon: mail"/>
-                    {github ? (<a href={github} target="_blank" aria-label={name + "'s github link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: github"/>) : null}
-                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s linkedin link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: linkedin"/>) : null}
+                    {github ? (<a href={github} target="_blank" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: github"/>) : null}
+                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: linkedin"/>) : null}
+                    {twitter ? (<a href={twitter} target="_blank" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: twitter"/>) : null}
+                    {discord ? (<a href={discord} target="_blank" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up"><i className='fa fa-gamepad'></i></a>) : null}
                 </div>
 
             </div>
@@ -63,7 +67,9 @@ export default ({members}) => {
                             description={members[i].description}
                             email={members[i].email}
                             github={members[i].github}
-                            linkedin={members[i].linkedin}  />
+                            linkedin={members[i].linkedin}
+                            twitter={members[i].twitter}
+                            discord={members[i].discord}  />
                     );
                 })
             }
