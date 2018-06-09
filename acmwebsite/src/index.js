@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'react-router-redux'
 import store, { history } from './store'
 import 'font-awesome/css/font-awesome.min.css';
+import './uikit.min.css';
 import App from './containers/app';
 
 
