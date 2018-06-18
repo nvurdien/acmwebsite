@@ -32,7 +32,9 @@ export default [
         name: "Chantalle Bril",
         title: "Secretary",
         description: "Takes meeting minutes and sends out emails. Responsible for all forms of communication.",
-        email: "cbril@csu.fullerton.edu"
+        email: "cbril@csu.fullerton.edu",
+        linkedin: "https://www.linkedin.com/in/chantallebril/",
+        github: "https://github.com/cbril"
     },
     {
         id: 4,
