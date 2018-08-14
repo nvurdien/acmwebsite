@@ -72,7 +72,8 @@ export default [{
     description: "Fullstack Development",
     email: "nvurdien@csu.fullerton.edu",
     github: "https://github.com/nvurdien",
-    linkedin: "https://www.linkedin.com/in/nvurdien/"
+    linkedin: "https://www.linkedin.com/in/nvurdien/",
+    discord: "hi"
 }, {
     id: 9,
     image: RoyImage,

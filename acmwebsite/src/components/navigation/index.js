@@ -32,7 +32,7 @@ export default ({name}) => {
                 <li className={name === "subscribe" ? "uk-active" : ""}><Link to="/subscribe" className="uk-button uk-button-text" onClick={Scroll.animateScroll.scrollToTop()}>Get Involved</Link></li>
             </ul>
             <div className="uk-navbar-right uk-hidden@s"><a className='uk-navbar-toggle' uk-navbar-toggle-icon=""
-                                                            uk-toggle="target: #offcanvas-navbar"/></div>
+                                                            uk-toggle="target: #offcanvas-navbar" dangerouslySetInnerHTML={{__html: ""}}/></div>
         </div>
     </nav>
 };

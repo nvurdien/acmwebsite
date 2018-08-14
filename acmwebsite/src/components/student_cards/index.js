@@ -35,11 +35,16 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
                     <p>{description}</p>
                 </div>
                 <div className="uk-card-footer">
-                    <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right uk-animation-scale-up" uk-icon="icon: mail"/>
-                    {github ? (<a href={github} target="_blank" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: github"/>) : null}
-                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: linkedin"/>) : null}
-                    {twitter ? (<a href={twitter} target="_blank" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" uk-icon="icon: twitter"/>) : null}
-                    {discord ? (<a href={discord} target="_blank" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up"><i className='fa fa-gamepad'></i></a>) : null}
+                    {/* // eslint-disable-next-line */}
+                    <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: mail"/>
+                    {/*// eslint-disable-next-line*/}
+                    {github ? (<a href={github} target="_blank" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: github"/>) : null}
+                    {/*// eslint-disable-next-line*/}
+                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: linkedin"/>) : null}
+                    {/*// eslint-disable-next-line*/}
+                    {twitter ? (<a href={twitter} target="_blank" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: twitter"/>) : null}
+                    {/*// eslint-disable-next-line*/}
+                    {discord ? (<a href={discord} target="_blank" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up"  style={{textDecoration:"none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-gamepad'/>"}} />) : null}
                 </div>
 
             </div>

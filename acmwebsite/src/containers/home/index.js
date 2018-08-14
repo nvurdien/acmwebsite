@@ -1,7 +1,4 @@
 import React from 'react'
-import { push } from 'react-router-redux'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux';
 import '../../style.css';
 import './style.css';
 import HomeImage from '../../media/homepage.jpg'
@@ -99,7 +96,7 @@ const Home = () => {
                                     fontSize:'13px'
                                 }} to='subscribe' onClick={Scroll.animateScroll.scrollToTop()}>Get Involved</Link></li>
                             </ul>
-                            <div className="uk-navbar-right uk-hidden@s"><a className='uk-navbar-toggle' uk-navbar-toggle-icon=""
+                            <div className="uk-navbar-right uk-hidden@s"><a className='uk-navbar-toggle' dangerouslySetInnerHTML={{__html: ""}} uk-navbar-toggle-icon=""
                                                                             uk-toggle="target: #offcanvas-navbar"/></div>
                         </div>
                     </nav>
@@ -121,11 +118,4 @@ const Home = () => {
     );
 };
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-    changePage: () => push('/about-us')
-}, dispatch);
-
-export default connect(
-    null,
-    mapDispatchToProps
-)(Home)
+export default Home;

@@ -52,15 +52,15 @@ const About = () => {
                             <h2>ICPC Practice</h2>
                         </center>
                     </div>
-        <div id='hackathons'>
-            <center><i className="fa fa-3x fa-trophy" style={{color: '#303030'}}/>
-            <h2>Hackathons</h2>
-        </center>
-    </div>
-</div>
+                    <div id='hackathons'>
+                        <center><i className="fa fa-3x fa-trophy" style={{color: '#303030'}}/>
+                        <h2>Hackathons</h2>
+                    </center>
+                    </div>
+                </div>
                 <p><Link to='/contact' className='uk-link-muted'>Contact us</Link> if you have an idea for a project or workshop, so we can start planning right away!</p>
             </div>
-</div>
+        </div>
         <Footer/>
     </div>
 };
