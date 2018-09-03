@@ -3,7 +3,6 @@ import OscarImage from '../media/oscar.jpg';
 import TommyImage from '../media/tommy.jpg';
 import ChantalleImage from '../media/chantalle.jpg';
 import JulianImage from '../media/julian.jpg';
-import DipenImage from '../media/dipen2.JPG';
 import HuyImage from '../media/huy.jpg';
 import JesseImage from '../media/jesse.jpg';
 import LonnieImage from '../media/lonnie.jpg';
