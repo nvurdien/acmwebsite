@@ -4,7 +4,9 @@ import TommyImage from '../media/tommy.jpg';
 import ChantalleImage from '../media/chantalle.jpg';
 import JulianImage from '../media/julian.jpg';
 import DipenImage from '../media/dipen2.JPG';
-import WilliamImage from '../media/william.jpg';
+import HuyImage from '../media/huy.jpg';
+import JesseImage from '../media/jesse.jpg';
+import LonnieImage from '../media/lonnie.jpg';
 
 export default [
     {
@@ -56,22 +58,30 @@ export default [
     },
     {
         id: 6,
-        image: DipenImage,
-        name: "Dipen Patel",
+        image: LonnieImage,
+        name: "Lonnie Hansen",
         title: "Project Manager",
-        description: "Creates new programs and manage current programs. Develops student projects and workshops.",
-        email: "dipenp@csu.fullerton.edu",
-        github: "https://github.com/Dipenp",
-        linkedin: "https://www.linkedin.com/in/dipen-patel89/"
+        description: "Creates new programs and manages current programs. Develops student projects and workshops.",
+        email: "lghansen@csu.fullerton.edu",
+        github: "https://github.com/thelonster",
+        linkedin: "https://www.linkedin.com/in/lonnie-hansen-312831149/"
     },
     {
         id: 7,
-        image: WilliamImage,
-        name: "William Clemons",
+        image: HuyImage,
+        name: "Huy Tran",
         title: "ICC Representative",
         description: "Attends InterClub Council meetings once every two weeks. Presents and votes on proposals on behalf of the club.",
-        email: "wclemons@csu.fullerton.edu",
-        github: "https://github.com/wclemons",
-        linkedin: "https://www.linkedin.com/in/william-clemons-0308a4105/"
+        email: "huytran2012@csu.fullerton.edu"
+    },
+    {
+        id: 8,
+        image: JesseImage,
+        name: "Jesse Mazzella",
+        title: "Web Master",
+        description: "Maintains the official website and manages ACM GitHub repositories. Benevolent web overlord.",
+        email: "jmazzella@csu.fullerton.edu",
+        github: "https://github.com/ozyx",
+        linkedin: "https://www.linkedin.com/in/jesse-mazzella-a28a22116/"
     }
 ];
