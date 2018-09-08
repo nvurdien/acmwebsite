@@ -14,7 +14,7 @@ export default () => {
                         <a href='https://www.twitter.com/acmcsuf' className="uk-margin-small-right uk-icon-button" aria-label="twitter link" target='_blank' rel="noopener noreferrer" dangerouslySetInnerHTML={{__html: ""}}  title='@acmcsuf' uk-icon="icon: twitter" uk-tooltip="pos: left"/>
                         <a href='https://www.facebook.com/groups/acmcsuf' className="uk-margin-small-right uk-icon-button" aria-label="facebook group link" rel="noopener noreferrer" dangerouslySetInnerHTML={{__html: ""}}  target='_blank' title='/group/acmcsuf' uk-icon="icon: facebook" uk-tooltip="pos: top"/>
                         <a href='https://www.instagram.com/acmcsuf' className="uk-margin-small-right uk-icon-button" aria-label="instagram link" target='_blank' rel="noopener noreferrer" dangerouslySetInnerHTML={{__html: ""}}  title='@acmcsuf' uk-icon="icon: instagram" uk-tooltip="pos: bottom"/>
-                        <a href='#slack' className="uk-margin-small-right uk-icon-button" aria-label="slack link" target='_blank' rel="noopener noreferrer" style={{textDecoration: "none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-slack'/>"}}  title='coming soon' uk-tooltip="pos: right"/>
+                        <a href='https://acmcsuf.slack.com' className="uk-margin-small-right uk-icon-button" aria-label="slack link" target='_blank' rel="noopener noreferrer" style={{textDecoration: "none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-slack'/>"}}  title='ACM CSUF Slack' uk-tooltip="pos: right"/>
                     </p>
                 </div>
                 <div>
