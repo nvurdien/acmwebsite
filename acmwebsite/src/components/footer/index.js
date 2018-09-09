@@ -23,9 +23,10 @@ export default () => {
                         meetings.map((meeting, i) => {
                             return (
                                 <p key={meetings[i].id}>
-                                    {meetings[i].name}
+                                    <span className='meeting-title'>{meetings[i].name}</span>
                                     {(meetings[i].room ? ` @ ${meetings[i].room}` : '')}
-                                    {(meetings[i].start_date ? ` starting ${meetings[i].start_date}` : '')}
+                                    <br/>
+                                    {(meetings[i].start_date ? `${meetings[i].start_date}` : '')}
                                     <br/>
                                     <span className='uk-margin-small-right' uk-icon={(meetings[i].icon ? meetings[i].icon : '')}/>
                                     {meetings[i].times}
