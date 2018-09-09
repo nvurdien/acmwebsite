@@ -3,6 +3,8 @@ import OscarImage from '../media/oscar.jpg';
 import TommyImage from '../media/tommy.jpg';
 import ChantalleImage from '../media/chantalle_sml.jpg';
 import JulianImage from '../media/julian.jpg';
+import DipenImage from '../media/dipen2_sml.jpg';
+import WilliamImage from '../media/william.jpg';
 import HuyImage from '../media/huy.jpg';
 import JesseImage from '../media/jesse.jpg';
 import LonnieImage from '../media/lonnie.jpg';
@@ -57,6 +59,16 @@ export default [
     },
     {
         id: 6,
+        image: DipenImage,
+        name: "Dipen Patel",
+        title: "Project Manager",
+        description: "Creates new programs and manages current programs. Develops student projects and workshops.",
+        email: "dipenp@csu.fullerton.edu",
+        github: "https://github.com/Dipenp",
+        linkedin: "https://www.linkedin.com/in/dipen-patel89/"
+    },
+    {
+        id: 7,
         image: LonnieImage,
         name: "Lonnie Hansen",
         title: "Project Manager",
@@ -66,7 +78,17 @@ export default [
         linkedin: "https://www.linkedin.com/in/lonnie-hansen-312831149/"
     },
     {
-        id: 7,
+        id: 8,
+        image: WilliamImage,
+        name: "William Clemons",
+        title: "ICC Representative",
+        description: "Attends InterClub Council meetings once every two weeks. Presents and votes on proposals on behalf of the club.",
+        email: "wclemons@csu.fullerton.edu",
+        github: "https://github.com/wclemons",
+        linkedin: "https://www.linkedin.com/in/william-clemons-0308a4105/"
+    },
+    {
+        id: 9,
         image: HuyImage,
         name: "Huy Tran",
         title: "ICC Representative",
@@ -74,7 +96,7 @@ export default [
         email: "huytran2012@csu.fullerton.edu"
     },
     {
-        id: 8,
+        id: 10,
         image: JesseImage,
         name: "Jesse Mazzella",
         title: "Web Master",
