@@ -10,7 +10,18 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": ""
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "acmwebsite/",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ""
         }
     ]
 }
