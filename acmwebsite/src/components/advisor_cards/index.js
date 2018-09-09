@@ -31,7 +31,7 @@ const Advisor = ({image, name, title, email, color}) => {
  */
 export default ({advisors}) => {
     return (
-        <div className="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center" uk-grid="">
+        <div className="uk-child-width-1-4@m uk-child-width-1-2@s uk-grid-collapse uk-grid-match uk-text-center" uk-grid="">
             {
                 advisors.map((user, i) => {
                     return (
@@ -41,7 +41,7 @@ export default ({advisors}) => {
                             name={advisors[i].name}
                             title={advisors[i].title}
                             email={advisors[i].email}
-                            color={advisors[i].id%3 === 0 ? ('primary') : (advisors[i].id%2 === 0 ? ('secondary') : ('muted'))} />
+                            color={advisors[i].id%2 !== 0 ? ('primary') : ('secondary')} />
                     );
                 })
             }

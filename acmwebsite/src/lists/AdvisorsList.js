@@ -4,9 +4,8 @@ import YunImage from '../media/yun.jpg';
 import LuisImage from '../media/luis.jpg';
 
 // id's divisible by the following:
-// divisible by 3 is blue
-// divisible by 2 is black
-// other is white
+// odd is blue
+// even is black
 
 export default [{
         id: 1,

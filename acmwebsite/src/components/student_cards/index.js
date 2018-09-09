@@ -60,7 +60,7 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
  */
 export default ({members}) => {
     return (
-        <div className="uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-small" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; repeat: true" uk-grid="">
+        <div className="uk-child-width-1-4@m uk-child-width-1-2@s uk-grid-small" uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; repeat: true" uk-grid="">
             {
                 members.map((user, i) => {
                     return (
