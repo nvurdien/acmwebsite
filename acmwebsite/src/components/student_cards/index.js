@@ -30,7 +30,7 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
                         </div>
                     </div>
                 </div>
-                <div className="uk-card-body">
+                <div className="uk-card-body uk-height-small">
 
                     <p>{description}</p>
                 </div>
