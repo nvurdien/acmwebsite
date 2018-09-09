@@ -38,13 +38,13 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
                     {/* // eslint-disable-next-line */}
                     <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: mail"/>
                     {/*// eslint-disable-next-line*/}
-                    {github ? (<a href={github} target="_blank" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: github"/>) : null}
+                    {github ? (<a href={github} target="_blank" rel="noopener noreferrer" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: github"/>) : null}
                     {/*// eslint-disable-next-line*/}
-                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: linkedin"/>) : null}
+                    {linkedin ? (<a href={linkedin} target="_blank" rel="noopener noreferrer" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: linkedin"/>) : null}
                     {/*// eslint-disable-next-line*/}
-                    {twitter ? (<a href={twitter} target="_blank" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: twitter"/>) : null}
+                    {twitter ? (<a href={twitter} target="_blank" rel="noopener noreferrer" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: twitter"/>) : null}
                     {/*// eslint-disable-next-line*/}
-                    {discord ? (<a href={discord} target="_blank" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right"  style={{textDecoration:"none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-gamepad'/>"}} />) : null}
+                    {discord ? (<a href={discord} target="_blank" rel="noopener noreferrer" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right"  style={{textDecoration:"none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-gamepad'/>"}} />) : null}
                 </div>
 
             </div>
