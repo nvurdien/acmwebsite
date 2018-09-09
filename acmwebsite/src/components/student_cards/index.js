@@ -30,21 +30,21 @@ const Card = ({image, name, title, description, email, github = null, linkedin =
                         </div>
                     </div>
                 </div>
-                <div className="uk-card-body uk-height-small">
+                <div className="uk-card-body uk-card-default uk-height-small">
 
                     <p>{description}</p>
                 </div>
                 <div className="uk-card-footer">
                     {/* // eslint-disable-next-line */}
-                    <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: mail"/>
+                    <a href={"mailto:" + email} aria-label={name + "'s email link"} className="uk-icon-button  uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: mail"/>
                     {/*// eslint-disable-next-line*/}
-                    {github ? (<a href={github} target="_blank" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: github"/>) : null}
+                    {github ? (<a href={github} target="_blank" aria-label={name + "'s GitHub link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: github"/>) : null}
                     {/*// eslint-disable-next-line*/}
-                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: linkedin"/>) : null}
+                    {linkedin ? (<a href={linkedin} target="_blank" aria-label={name + "'s Linkedin link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: linkedin"/>) : null}
                     {/*// eslint-disable-next-line*/}
-                    {twitter ? (<a href={twitter} target="_blank" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: twitter"/>) : null}
+                    {twitter ? (<a href={twitter} target="_blank" aria-label={name + "'s Twitter link"} className="uk-icon-button uk-margin-small-right" dangerouslySetInnerHTML={{__html: ""}} uk-icon="icon: twitter"/>) : null}
                     {/*// eslint-disable-next-line*/}
-                    {discord ? (<a href={discord} target="_blank" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right uk-animation-scale-up"  style={{textDecoration:"none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-gamepad'/>"}} />) : null}
+                    {discord ? (<a href={discord} target="_blank" aria-label={name + "'s Discord link"} className="uk-icon-button uk-margin-small-right"  style={{textDecoration:"none"}} dangerouslySetInnerHTML={{__html: "<i class='fa fa-gamepad'/>"}} />) : null}
                 </div>
 
             </div>
