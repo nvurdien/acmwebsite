@@ -5,7 +5,6 @@ export default ({list_url, hidden_val}) => (
         <form action={`${list_url}`} className='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' noValidate="" target='_blank'>
             <fieldset className='uk-fieldset'>
                 <h1>Join our Mailing List</h1>
-                <legend className='uk-legend'>Join the mailing list and connect with us on Titan Link <a href='https://fullerton.campuslabs.com/engage/organization/acm' className='uk-link-muted' target='_blank' rel="noopener noreferrer">here</a>.</legend>
             </fieldset>
             <div className='uk-grid-small' id='mc_embed_signup_scroll' uk-grid="">
                 <div className='uk-width-1-2@s'><input name='FNAME' className='uk-input' id='mce-FNAME' alt="First Name" label="" placeholder="First Name" title='name' /></div>
